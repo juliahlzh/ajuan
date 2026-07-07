@@ -1,0 +1,197 @@
+﻿{% extends 'base.html' %}
+{% block content %}
+<section class="card">
+  <h1>Cek Ajuan</h1>
+  <p class="sub">Cari berdasarkan nama / ID, lalu filter tanggal atau cabang.</p>
+
+  <form method="get" class="filter-bar">
+    <input type="text" name="keyword" placeholder="Cari nama atau ID ajuan" value="{{ filters.keyword }}">
+    <select name="tahun">
+      <option value="">Semua Tahun</option>
+      {% for y in years %}
+        <option value="{{ y }}" {% if filters.tahun == y %}selected{% endif %}>{{ y }}</option>
+      {% endfor %}
+    </select>
+    <input type="text" name="cabang" placeholder="Filter cabang" value="{{ filters.cabang }}">
+    <input type="date" name="tanggal_awal" value="{{ filters.tanggal_awal }}">
+    <input type="date" name="tanggal_akhir" value="{{ filters.tanggal_akhir }}">
+    <button type="submit">Cari</button>
+  </form>
+  <div class="actions mb12">
+    <a class="btn-link edit-link" href="{{ url_for('export_ajuan_excel', keyword=filters.keyword, tahun=filters.tahun, cabang=filters.cabang, tanggal_awal=filters.tanggal_awal, tanggal_akhir=filters.tanggal_akhir) }}">Download Rekap Excel</a>
+  </div>
+  <div class="summary-grid">
+    <div class="summary-card">
+      <div class="summary-label">Total Data</div>
+      <div class="summary-value">{{ summary.total_data }}</div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-label">Total Ajuan</div>
+      <div class="summary-value">Rp {{ '{:,.0f}'.format(summary.total_ajuan) }}</div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-label">Total Realisasi</div>
+      <div class="summary-value">Rp {{ '{:,.0f}'.format(summary.total_realisasi) }}</div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-label">Total Selisih</div>
+      <div class="summary-value">Rp {{ '{:,.0f}'.format(summary.total_selisih) }}</div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-label">Surplus / Defisit / Sesuai</div>
+      <div class="summary-value">{{ summary.count_surplus }} / {{ summary.count_defisit }} / {{ summary.count_sesuai }}</div>
+    </div>
+  </div>
+  <div class="dashboard-grid">
+    <div class="dashboard-card">
+      <h3>Status LPJ</h3>
+      <ul class="mini-list">
+        {% for k, v in dashboard.status_lpj.items() %}
+          <li><span>{{ k }}</span><b>{{ v }}</b></li>
+        {% else %}
+          <li><span>-</span><b>0</b></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="dashboard-card">
+      <h3>Status Dana</h3>
+      <ul class="mini-list">
+        {% for k, v in dashboard.status_dana.items() %}
+          <li><span>{{ k }}</span><b>{{ v }}</b></li>
+        {% else %}
+          <li><span>-</span><b>0</b></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="dashboard-card">
+      <h3>Top Divisi/Cabang</h3>
+      <ul class="mini-list">
+        {% for divisi, total in dashboard.top_divisi %}
+          <li><span>{{ divisi }}</span><b>{{ total }}</b></li>
+        {% else %}
+          <li><span>-</span><b>0</b></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="dashboard-card full-row">
+      <h3>Tren Nominal Ajuan (6 Bulan Terakhir)</h3>
+      <div class="trend-grid">
+        {% for period, amount in dashboard.trend_nominal %}
+          <div class="trend-item">
+            <div class="trend-label">{{ period }}</div>
+            <div class="trend-value">Rp {{ '{:,.0f}'.format(amount) }}</div>
+          </div>
+        {% else %}
+          <div class="trend-item">
+            <div class="trend-label">-</div>
+            <div class="trend-value">Rp 0</div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tanggal</th>
+          <th>Nama</th>
+          <th>Atas Nama Rekening</th>
+          <th>Divisi / Cabang</th>
+          <th>Jenis</th>
+          <th>Nominal</th>
+          <th>Bukti TF</th>
+          <th>Memo Ajuan</th>
+          <th>Status LPJ</th>
+          <th>Jatuh Tempo LPJ</th>
+          <th>Realisasi</th>
+          <th>Selisih</th>
+          <th>Status Dana</th>
+          <th>File LPJ</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in rows %}
+          <tr>
+            <td>{{ item.id_ajuan }}</td>
+            <td>{{ item.tanggal_ajuan }}</td>
+            <td>{{ item.nama_pengaju }}</td>
+            <td>{{ item.atas_nama_rekening }}</td>
+            <td>{{ item.divisi_cabang }}</td>
+            <td>{{ item.jenis_ajuan }}</td>
+            <td>Rp {{ '{:,.0f}'.format(item.nominal) }}</td>
+            <td>
+              {% if item.link_bukti_transfer %}
+                <a class="btn-link" href="{{ item.link_bukti_transfer }}" target="_blank">Lihat Bukti TF</a>
+              {% else %}
+                <span class="muted">Belum diupload bagian Finance</span>
+              {% endif %}
+            </td>
+            <td>
+              {% if item.link_memo_ajuan %}
+                <a class="btn-link" href="{{ item.link_memo_ajuan }}" target="_blank">Lihat Memo</a>
+              {% else %}
+                <span class="muted">Belum ada memo</span>
+              {% endif %}
+            </td>
+            <td>
+              {% if item.status_lpj_turunan == 'Sudah Upload' %}
+                <span class="badge done">{{ item.status_lpj_turunan }}</span>
+              {% elif item.status_lpj_turunan == 'Terlambat' %}
+                <span class="badge late">{{ item.status_lpj_turunan }}</span>
+              {% elif item.status_lpj_turunan == 'Jatuh Tempo' %}
+                <span class="badge process">{{ item.status_lpj_turunan }}</span>
+              {% elif item.status_lpj_turunan == 'Belum Jatuh Tempo' %}
+                <span class="badge pending">{{ item.status_lpj_turunan }}</span>
+              {% else %}
+                <span class="badge mute">{{ item.status_lpj_turunan }}</span>
+              {% endif %}
+            </td>
+            <td>{{ item.tanggal_jatuh_tempo_lpj or '-' }}</td>
+            <td>
+              {% if item.nominal_realisasi is not none %}
+                Rp {{ '{:,.0f}'.format(item.nominal_realisasi) }}
+              {% else %}
+                <span class="muted">Belum input</span>
+              {% endif %}
+            </td>
+            <td>
+              {% if item.selisih is not none %}
+                Rp {{ '{:,.0f}'.format(item.selisih) }}
+              {% else %}
+                <span class="muted">-</span>
+              {% endif %}
+            </td>
+            <td>
+              {% if item.status_dana == 'Surplus' %}
+                <span class="badge done">Surplus</span>
+              {% elif item.status_dana == 'Defisit' %}
+                <span class="badge late">Defisit</span>
+              {% elif item.status_dana == 'Sesuai' %}
+                <span class="badge process">Sesuai</span>
+              {% else %}
+                <span class="badge mute">{{ item.status_dana }}</span>
+              {% endif %}
+            </td>
+            <td>
+              {% if item.link_lpj %}
+                <a class="btn-link" href="{{ item.link_lpj }}" target="_blank">Lihat LPJ</a>
+              {% elif item.wajib_lpj == 1 %}
+                <span class="muted">LPJ belum diupload</span>
+              {% else %}
+                <span class="muted">Tidak wajib LPJ</span>
+              {% endif %}
+            </td>
+            <td><a class="btn-link edit-link" href="{{ url_for('edit_ajuan', id_ajuan=item.id_ajuan) }}">Edit</a></td>
+          </tr>
+        {% else %}
+          <tr><td colspan="16">Data tidak ditemukan.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,814 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/bj28a7",
+    "id": "bj28a7",
+    "slide": 3,
+    "layoutId": "4b5c3251-f062-47b5-8aa6-6cb5620b9cbe",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "1cdfd1f9-dc77-4ed8-9cc3-50bf23e97d84",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F7FBFC",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Ajuan Guide Screenshot",
+    "colors": {
+      "accent1": "#0F766E",
+      "accent2": "#1D4ED8",
+      "accent3": "#F59E0B",
+      "accent4": "#DC2626",
+      "accent5": "#0891B2",
+      "accent6": "#8B5CF6",
+      "bg1": "#FFFFFF",
+      "bg2": "#EEF6F7",
+      "tx1": "#0F172A",
+      "tx2": "#60708B",
+      "dk1": "#000000",
+      "dk2": "#1E293B",
+      "lt1": "#FFFFFF",
+      "lt2": "#D7E1EA",
+      "hlink": "#1D4ED8",
+      "folHlink": "#7C3AED"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "4b5c3251-f062-47b5-8aa6-6cb5620b9cbe",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "1cdfd1f9-dc77-4ed8-9cc3-50bf23e97d84",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "1cdfd1f9-dc77-4ed8-9cc3-50bf23e97d84",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kjm1cfa9",
+      "id": "1",
+      "bbox": [
+        72,
+        52,
+        320,
+        24
+      ],
+      "geometry": "rect",
+      "text": "ROLE ADMIN",
+      "textPreview": "ROLE ADMIN",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#0F766E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ROLE ADMIN"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ROLE ADMIN",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#0F766E",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ROLE ADMIN",
+              "fontSize": 12,
+              "color": "#0F766E",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r2p8nqxs",
+      "id": "2",
+      "bbox": [
+        72,
+        80,
+        620,
+        54
+      ],
+      "geometry": "rect",
+      "text": "2. Menu Utama Admin",
+      "textPreview": "2. Menu Utama Admin",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "fontSize": 30,
+        "typeface": "+mn-lt",
+        "color": "#0F172A",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2. Menu Utama Admin"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2. Menu Utama Admin",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "color": "#0F172A",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2. Menu Utama Admin",
+              "fontSize": 30,
+              "color": "#0F172A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2hwfyxob",
+      "id": "3",
+      "bbox": [
+        72,
+        128,
+        700,
+        34
+      ],
+      "geometry": "rect",
+      "text": "Admin berfokus pada input ajuan, monitoring dashboard, import sheet, dan upload LPJ.",
+      "textPreview": "Admin berfokus pada input ajuan, monitoring dashboard, import sheet, dan upload LPJ.",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#64748B",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Admin berfokus pada input ajuan, monitoring dashboard, import sheet, dan upload LPJ."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Admin berfokus pada input ajuan, monitoring dashboard, import sheet, dan upload LPJ.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#64748B"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Admin berfokus pada input ajuan, monitoring dashboard, import sheet, dan upload LPJ.",
+              "fontSize": 17,
+              "color": "#64748B"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/sfil0rqd",
+      "id": "4",
+      "bbox": [
+        72,
+        180,
+        700,
+        452
+      ],
+      "geometry": "roundRect",
+      "alt": "02-admin-dashboard.png",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "imageMask": {
+        "geometry": "roundRect",
+        "adjustmentList": [
+          {
+            "name": "adj",
+            "formula": "val 3540"
+          }
+        ]
+      },
+      "asset": {
+        "assetId": "ace5eb6d-24cc-4999-b885-0db3bb2ffcae",
+        "contentType": "image/png",
+        "byteLength": 240791
+      }
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gvy90je9",
+      "id": "5",
+      "bbox": [
+        810,
+        180,
+        398,
+        452
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D7E1EA",
+      "lineWidth": 1
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ra5gbq1o",
+      "id": "6",
+      "bbox": [
+        842,
+        212,
+        300,
+        48
+      ],
+      "geometry": "rect",
+      "text": "Yang Perlu Diperhatikan Admin",
+      "textPreview": "Yang Perlu Diperhatikan Admin",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#0F172A",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Yang Perlu Diperhatikan"
+          },
+          {
+            "index": 2,
+            "text": "Admin"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Yang Perlu Diperhatikan Admin",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#0F172A",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Yang Perlu Diperhatikan Admin",
+              "fontSize": 24,
+              "color": "#0F172A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2p8nqxs7",
+      "id": "7",
+      "bbox": [
+        844,
+        285,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#1D4ED8",
+      "lineColor": "#1D4ED8",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9knih4by",
+      "id": "8",
+      "bbox": [
+        864,
+        278,
+        320,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Dashboard menampilkan total ajuan, menunggu review, LPJ, dan realisasi.",
+      "textPreview": "Dashboard menampilkan total ajuan, menunggu review, LPJ, dan realisasi.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Dashboard menampilkan total ajuan,"
+          },
+          {
+            "index": 2,
+            "text": "menunggu review, LPJ, dan realisasi."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Dashboard menampilkan total ajuan, menunggu review, LPJ, dan realisasi.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Dashboard menampilkan total ajuan, menunggu review, LPJ, dan realisasi.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kzupwb2h",
+      "id": "9",
+      "bbox": [
+        844,
+        333,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#1D4ED8",
+      "lineColor": "#1D4ED8",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ulwval87",
+      "id": "10",
+      "bbox": [
+        864,
+        326,
+        320,
+        52
+      ],
+      "geometry": "rect",
+      "text": "Menu Input Ajuan dipakai untuk membuat data baru.",
+      "textPreview": "Menu Input Ajuan dipakai untuk membuat data baru.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Menu Input Ajuan dipakai untuk"
+          },
+          {
+            "index": 2,
+            "text": "membuat data baru."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Menu Input Ajuan dipakai untuk membuat data baru.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Menu Input Ajuan dipakai untuk membuat data baru.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/j6tovaho",
+      "id": "11",
+      "bbox": [
+        844,
+        381,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#1D4ED8",
+      "lineColor": "#1D4ED8",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/crmhk3q5",
+      "id": "12",
+      "bbox": [
+        864,
+        374,
+        320,
+        64
+      ],
+      "geometry": "rect",
+      "text": "Import Sheet dipakai jika ingin memasukkan data massal dari Excel/CSV.",
+      "textPreview": "Import Sheet dipakai jika ingin memasukkan data massal dari Excel/CSV.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Import Sheet dipakai jika ingin"
+          },
+          {
+            "index": 2,
+            "text": "memasukkan data massal dari Excel/CSV."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Import Sheet dipakai jika ingin memasukkan data massal dari Excel/CSV.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Import Sheet dipakai jika ingin memasukkan data massal dari Excel/CSV.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1cfa9w3m",
+      "id": "13",
+      "bbox": [
+        844,
+        429,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#1D4ED8",
+      "lineColor": "#1D4ED8",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/uxc3ylc7",
+      "id": "14",
+      "bbox": [
+        864,
+        422,
+        320,
+        64
+      ],
+      "geometry": "rect",
+      "text": "LPJ dipakai untuk upload pertanggungjawaban dan isi realisasi dana.",
+      "textPreview": "LPJ dipakai untuk upload pertanggungjawaban dan isi realisasi dana.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "LPJ dipakai untuk upload"
+          },
+          {
+            "index": 2,
+            "text": "pertanggungjawaban dan isi realisasi"
+          },
+          {
+            "index": 3,
+            "text": "dana."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "LPJ dipakai untuk upload pertanggungjawaban dan isi realisasi dana.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "LPJ dipakai untuk upload pertanggungjawaban dan isi realisasi dana.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ji5snelo",
+      "id": "15",
+      "bbox": [
+        844,
+        477,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#1D4ED8",
+      "lineColor": "#1D4ED8",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/c3ylc7u5",
+      "id": "16",
+      "bbox": [
+        864,
+        470,
+        320,
+        42
+      ],
+      "geometry": "rect",
+      "text": "Logout tersedia di kanan atas.",
+      "textPreview": "Logout tersedia di kanan atas.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Logout tersedia di kanan atas."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Logout tersedia di kanan atas.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Logout tersedia di kanan atas.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1kre1w7m",
+      "id": "17",
+      "bbox": [
+        72,
+        684,
+        420,
+        18
+      ],
+      "geometry": "rect",
+      "text": "Panduan Ajuan Pembayaran • Slide 3",
+      "textPreview": "Panduan Ajuan Pembayaran • Slide 3",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#64748B",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Panduan Ajuan Pembayaran • Slide 3"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Panduan Ajuan Pembayaran • Slide 3",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#64748B",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Panduan Ajuan Pembayaran • Slide 3",
+              "fontSize": 11,
+              "color": "#64748B",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

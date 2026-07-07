@@ -1,0 +1,218 @@
+{"kind":"deck","id":"pr/w272ee","name":"Deck"}
+{"kind":"layout","layoutId":"1cdfd1f9-dc77-4ed8-9cc3-50bf23e97d84","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"4b5c3251-f062-47b5-8aa6-6cb5620b9cbe","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/w3ogf2","slide":1,"title":"Panduan Lengkap","textShapes":7}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":1,"text":"Panduan Lengkap\nAjuan Pembayaran","textPreview":"Panduan Lengkap | Ajuan Pembayaran","textChars":32,"textLines":2,"bbox":[72,72,430,110]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":1,"text":"Tutorial user Admin dan Dirkeu\ndengan screenshot web terbaru","textPreview":"Tutorial user Admin dan Dirkeu | dengan screenshot web terbaru","textChars":60,"textLines":2,"bbox":[72,190,360,60]}
+{"kind":"shape","id":"sh/8jqh0fep","slide":1,"bbox":[72,286,420,160]}
+{"kind":"textbox","id":"sh/fa9w3m94","slide":1,"text":"Akun Login","textPreview":"Akun Login","textChars":10,"textLines":1,"bbox":[102,314,200,28]}
+{"kind":"shape","id":"sh/qpg3ex0n","slide":1,"bbox":[104,361,10,10]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":1,"text":"Admin: finance / keuangannf","textPreview":"Admin: finance / keuangannf","textChars":27,"textLines":1,"bbox":[124,354,300,34]}
+{"kind":"shape","id":"sh/8v6psfil","slide":1,"bbox":[104,395,10,10]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":1,"text":"Dirkeu: dirkeu / direkturkeuangan","textPreview":"Dirkeu: dirkeu / direkturkeuangan","textChars":33,"textLines":1,"bbox":[124,388,300,34]}
+{"kind":"shape","id":"sh/qtcj6tov","slide":1,"bbox":[104,429,10,10]}
+{"kind":"textbox","id":"sh/svu9knih","slide":1,"text":"Akses sesuai role masing-masing","textPreview":"Akses sesuai role masing-masing","textChars":31,"textLines":1,"bbox":[124,422,300,34]}
+{"kind":"textbox","id":"sh/ap4r65wj","slide":1,"text":"Panduan Ajuan Pembayaran Screenshot • Slide 1","textPreview":"Panduan Ajuan Pembayaran Screenshot • Slide 1","textChars":45,"textLines":1,"bbox":[72,684,420,18]}
+{"kind":"image","id":"im/epkzupwb","slide":1,"name":"","geometry":"roundRect","alt":"01-login.png","bbox":[560,72,648,576]}
+{"kind":"notes","id":"nt/w3ogf2","slide":1,"text":""}
+{"kind":"slide","id":"sl/ilkn7s","slide":2,"title":"MULAI DARI LOGIN","textShapes":11}
+{"kind":"textbox","id":"sh/g7adsji5","slide":2,"text":"MULAI DARI LOGIN","textPreview":"MULAI DARI LOGIN","textChars":16,"textLines":1,"bbox":[72,52,320,24]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":2,"text":"1. Cara Masuk ke Aplikasi","textPreview":"1. Cara Masuk ke Aplikasi","textChars":25,"textLines":1,"bbox":[72,80,620,54]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":2,"text":"Login cukup sekali sesuai role. Centang opsi ingat login bila ingin tetap masuk di perangkat yang sama.","textPreview":"Login cukup sekali sesuai role. Centang opsi ingat login bila ingin tetap masuk di perangkat yang sama.","textChars":103,"textLines":1,"bbox":[72,128,700,34]}
+{"kind":"shape","id":"sh/90je9cvi","slide":2,"bbox":[72,176,430,452]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":2,"text":"Langkah Login","textPreview":"Langkah Login","textChars":13,"textLines":1,"bbox":[102,206,200,28]}
+{"kind":"shape","id":"sh/rytsvu9k","slide":2,"bbox":[104,265,10,10]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":2,"text":"Buka URL aplikasi Ajuan Pembayaran.","textPreview":"Buka URL aplikasi Ajuan Pembayaran.","textChars":35,"textLines":1,"bbox":[124,258,340,42]}
+{"kind":"shape","id":"sh/9cvixcze","slide":2,"bbox":[104,313,10,10]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":2,"text":"Masukkan username dan password sesuai role.","textPreview":"Masukkan username dan password sesuai role.","textChars":43,"textLines":1,"bbox":[124,306,340,52]}
+{"kind":"shape","id":"sh/ahoza1gv","slide":2,"bbox":[104,361,10,10]}
+{"kind":"textbox","id":"sh/32lszqtc","slide":2,"text":"Centang 'ingat login saya 30 hari' jika diperlukan.","textPreview":"Centang 'ingat login saya 30 hari' jika diperlukan.","textChars":51,"textLines":1,"bbox":[124,354,340,60]}
+{"kind":"shape","id":"sh/sneloj2t","slide":2,"bbox":[104,409,10,10]}
+{"kind":"textbox","id":"sh/l87ed8ba","slide":2,"text":"Klik tombol Masuk.","textPreview":"Klik tombol Masuk.","textChars":18,"textLines":1,"bbox":[124,402,340,42]}
+{"kind":"shape","id":"sh/at47y1kr","slide":2,"bbox":[104,457,10,10]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":2,"text":"Jika menu tidak sesuai, logout lalu login ulang dengan akun yang benar.","textPreview":"Jika menu tidak sesuai, logout lalu login ulang dengan akun yang benar.","textChars":71,"textLines":1,"bbox":[124,450,340,72]}
+{"kind":"shape","id":"sh/szqtcj6t","slide":2,"bbox":[72,648,1136,30]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":2,"text":"Admin dan Dirkeu menggunakan halaman login yang sama, tetapi menu setelah login akan berbeda sesuai role.","textPreview":"Admin dan Dirkeu menggunakan halaman login yang sama, tetapi menu setelah login akan berbeda sesuai role.","textChars":105,"textLines":1,"bbox":[92,653,1080,18]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":2,"text":"Panduan Ajuan Pembayaran • Slide 2","textPreview":"Panduan Ajuan Pembayaran • Slide 2","textChars":34,"textLines":1,"bbox":[72,684,420,18]}
+{"kind":"image","id":"im/donyd0z6","slide":2,"name":"","geometry":"roundRect","alt":"01-login.png","bbox":[540,170,620,480]}
+{"kind":"notes","id":"nt/ilkn7s","slide":2,"text":""}
+{"kind":"slide","id":"sl/bj28a7","slide":3,"title":"ROLE ADMIN","textShapes":10}
+{"kind":"textbox","id":"sh/kjm1cfa9","slide":3,"text":"ROLE ADMIN","textPreview":"ROLE ADMIN","textChars":10,"textLines":1,"bbox":[72,52,320,24]}
+{"kind":"textbox","id":"sh/r2p8nqxs","slide":3,"text":"2. Menu Utama Admin","textPreview":"2. Menu Utama Admin","textChars":19,"textLines":1,"bbox":[72,80,620,54]}
+{"kind":"textbox","id":"sh/2hwfyxob","slide":3,"text":"Admin berfokus pada input ajuan, monitoring dashboard, import sheet, dan upload LPJ.","textPreview":"Admin berfokus pada input ajuan, monitoring dashboard, import sheet, dan upload LPJ.","textChars":84,"textLines":1,"bbox":[72,128,700,34]}
+{"kind":"shape","id":"sh/gvy90je9","slide":3,"bbox":[810,180,398,452]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":3,"text":"Yang Perlu Diperhatikan Admin","textPreview":"Yang Perlu Diperhatikan Admin","textChars":29,"textLines":1,"bbox":[842,212,300,48]}
+{"kind":"shape","id":"sh/2p8nqxs7","slide":3,"bbox":[844,285,10,10]}
+{"kind":"textbox","id":"sh/9knih4by","slide":3,"text":"Dashboard menampilkan total ajuan, menunggu review, LPJ, dan realisasi.","textPreview":"Dashboard menampilkan total ajuan, menunggu review, LPJ, dan realisasi.","textChars":71,"textLines":1,"bbox":[864,278,320,62]}
+{"kind":"shape","id":"sh/kzupwb2h","slide":3,"bbox":[844,333,10,10]}
+{"kind":"textbox","id":"sh/ulwval87","slide":3,"text":"Menu Input Ajuan dipakai untuk membuat data baru.","textPreview":"Menu Input Ajuan dipakai untuk membuat data baru.","textChars":49,"textLines":1,"bbox":[864,326,320,52]}
+{"kind":"shape","id":"sh/j6tovaho","slide":3,"bbox":[844,381,10,10]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":3,"text":"Import Sheet dipakai jika ingin memasukkan data massal dari Excel/CSV.","textPreview":"Import Sheet dipakai jika ingin memasukkan data massal dari Excel/CSV.","textChars":70,"textLines":1,"bbox":[864,374,320,64]}
+{"kind":"shape","id":"sh/1cfa9w3m","slide":3,"bbox":[844,429,10,10]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":3,"text":"LPJ dipakai untuk upload pertanggungjawaban dan isi realisasi dana.","textPreview":"LPJ dipakai untuk upload pertanggungjawaban dan isi realisasi dana.","textChars":67,"textLines":1,"bbox":[864,422,320,64]}
+{"kind":"shape","id":"sh/ji5snelo","slide":3,"bbox":[844,477,10,10]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":3,"text":"Logout tersedia di kanan atas.","textPreview":"Logout tersedia di kanan atas.","textChars":30,"textLines":1,"bbox":[864,470,320,42]}
+{"kind":"textbox","id":"sh/1kre1w7m","slide":3,"text":"Panduan Ajuan Pembayaran • Slide 3","textPreview":"Panduan Ajuan Pembayaran • Slide 3","textChars":34,"textLines":1,"bbox":[72,684,420,18]}
+{"kind":"image","id":"im/sfil0rqd","slide":3,"name":"","geometry":"roundRect","alt":"02-admin-dashboard.png","bbox":[72,180,700,452]}
+{"kind":"notes","id":"nt/bj28a7","slide":3,"text":""}
+{"kind":"slide","id":"sl/my4x6t","slide":4,"title":"ADMIN INPUT","textShapes":10}
+{"kind":"textbox","id":"sh/u54zidon","slide":4,"text":"ADMIN INPUT","textPreview":"ADMIN INPUT","textChars":11,"textLines":1,"bbox":[72,52,320,24]}
+{"kind":"textbox","id":"sh/5sneloj2","slide":4,"text":"3. Cara Input Ajuan Baru","textPreview":"3. Cara Input Ajuan Baru","textChars":24,"textLines":1,"bbox":[72,80,620,54]}
+{"kind":"textbox","id":"sh/cbulwval","slide":4,"text":"Isi data inti dulu, lalu lengkapi LPJ dan lampiran memo jika diperlukan.","textPreview":"Isi data inti dulu, lalu lengkapi LPJ dan lampiran memo jika diperlukan.","textChars":72,"textLines":1,"bbox":[72,128,700,34]}
+{"kind":"shape","id":"sh/ytsvu9kn","slide":4,"bbox":[860,178,348,470]}
+{"kind":"textbox","id":"sh/5kb6xkf6","slide":4,"text":"Checklist Input","textPreview":"Checklist Input","textChars":15,"textLines":1,"bbox":[892,210,220,30]}
+{"kind":"shape","id":"sh/czed8v6p","slide":4,"bbox":[894,267,10,10]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":4,"text":"Isi Tanggal Ajuan dan Nama Pengaju.","textPreview":"Isi Tanggal Ajuan dan Nama Pengaju.","textChars":35,"textLines":1,"bbox":[914,260,280,44]}
+{"kind":"shape","id":"sh/yhgn29gr","slide":4,"bbox":[894,315,10,10]}
+{"kind":"textbox","id":"sh/kb6xkf6d","slide":4,"text":"Pisahkan Atas Nama Rekening, Bank, dan Nomor Rekening.","textPreview":"Pisahkan Atas Nama Rekening, Bank, dan Nomor Rekening.","textChars":54,"textLines":1,"bbox":[914,308,280,62]}
+{"kind":"shape","id":"sh/9w3m94fu","slide":4,"bbox":[894,363,10,10]}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":4,"text":"Nominal otomatis mengikuti format rupiah.","textPreview":"Nominal otomatis mengikuti format rupiah.","textChars":41,"textLines":1,"bbox":[914,356,280,52]}
+{"kind":"shape","id":"sh/rqd4vmtw","slide":4,"bbox":[894,411,10,10]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":4,"text":"Upload memo bisa lebih dari satu file bila memo terdiri dari beberapa halaman.","textPreview":"Upload memo bisa lebih dari satu file bila memo terdiri dari beberapa halaman.","textChars":78,"textLines":1,"bbox":[914,404,280,74]}
+{"kind":"shape","id":"sh/9knih4by","slide":4,"bbox":[894,459,10,10]}
+{"kind":"textbox","id":"sh/2t83itgf","slide":4,"text":"Ajuan baru tersimpan sebagai draft lalu diajukan ke Dirkeu setelah dicek admin.","textPreview":"Ajuan baru tersimpan sebagai draft lalu diajukan ke Dirkeu setelah dicek admin.","textChars":79,"textLines":1,"bbox":[914,452,280,78]}
+{"kind":"textbox","id":"sh/re1w7mp0","slide":4,"text":"Panduan Ajuan Pembayaran • Slide 4","textPreview":"Panduan Ajuan Pembayaran • Slide 4","textChars":34,"textLines":1,"bbox":[72,684,420,18]}
+{"kind":"image","id":"im/ixczed8v","slide":4,"name":"","geometry":"roundRect","alt":"03-admin-input.png","bbox":[72,178,760,470]}
+{"kind":"notes","id":"nt/my4x6t","slide":4,"text":""}
+{"kind":"slide","id":"sl/af5vn3","slide":5,"title":"MONITORING ADMIN","textShapes":10}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":5,"text":"MONITORING ADMIN","textPreview":"MONITORING ADMIN","textChars":16,"textLines":1,"bbox":[72,52,320,24]}
+{"kind":"textbox","id":"sh/obm58z25","slide":5,"text":"4. Cek Ajuan, Filter, Edit, dan Export","textPreview":"4. Cek Ajuan, Filter, Edit, dan Export","textChars":38,"textLines":1,"bbox":[72,80,620,54]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":5,"text":"Menu Dashboard / Cek Ajuan dipakai untuk memantau seluruh status dan tindak lanjut.","textPreview":"Menu Dashboard / Cek Ajuan dipakai untuk memantau seluruh status dan tindak lanjut.","textChars":83,"textLines":1,"bbox":[72,128,700,34]}
+{"kind":"shape","id":"sh/zed8v6ps","slide":5,"bbox":[822,176,386,470]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":5,"text":"Fungsi Utama","textPreview":"Fungsi Utama","textChars":12,"textLines":1,"bbox":[854,208,200,28]}
+{"kind":"shape","id":"sh/hk3q5o7q","slide":5,"bbox":[856,263,10,10]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":5,"text":"Lihat KPI total ajuan, review Dirkeu, LPJ, dan realisasi.","textPreview":"Lihat KPI total ajuan, review Dirkeu, LPJ, dan realisasi.","textChars":57,"textLines":1,"bbox":[876,256,300,62]}
+{"kind":"shape","id":"sh/z61032ls","slide":5,"bbox":[856,311,10,10]}
+{"kind":"textbox","id":"sh/za1gvy90","slide":5,"text":"Gunakan search, filter, dan urutan untuk mempercepat pencarian.","textPreview":"Gunakan search, filter, dan urutan untuk mempercepat pencarian.","textChars":63,"textLines":1,"bbox":[876,304,300,62]}
+{"kind":"shape","id":"sh/ap4r65wj","slide":5,"bbox":[856,359,10,10]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":5,"text":"Buka detail memo dan edit ajuan bila ada revisi.","textPreview":"Buka detail memo dan edit ajuan bila ada revisi.","textChars":48,"textLines":1,"bbox":[876,352,300,54]}
+{"kind":"shape","id":"sh/svu9knih","slide":5,"bbox":[856,407,10,10]}
+{"kind":"textbox","id":"sh/zidonyd0","slide":5,"text":"Gunakan Export Excel untuk rekap data yang sudah difilter.","textPreview":"Gunakan Export Excel untuk rekap data yang sudah difilter.","textChars":58,"textLines":1,"bbox":[876,400,300,62]}
+{"kind":"shape","id":"sh/a1gvy90j","slide":5,"bbox":[856,455,10,10]}
+{"kind":"textbox","id":"sh/hoza1gvy","slide":5,"text":"Status Dirkeu dan status bayar bisa dipantau dalam satu layar.","textPreview":"Status Dirkeu dan status bayar bisa dipantau dalam satu layar.","textChars":62,"textLines":1,"bbox":[876,448,300,62]}
+{"kind":"textbox","id":"sh/s36hcrmh","slide":5,"text":"Panduan Ajuan Pembayaran • Slide 5","textPreview":"Panduan Ajuan Pembayaran • Slide 5","textChars":34,"textLines":1,"bbox":[72,684,420,18]}
+{"kind":"image","id":"im/7ed8bat4","slide":5,"name":"","geometry":"roundRect","alt":"04-admin-cek-ajuan.png","bbox":[72,176,720,470]}
+{"kind":"notes","id":"nt/af5vn3","slide":5,"text":""}
+{"kind":"slide","id":"sl/x6wsek","slide":6,"title":"LPJ & REALISASI","textShapes":10}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":6,"text":"LPJ & REALISASI","textPreview":"LPJ & REALISASI","textChars":15,"textLines":1,"bbox":[72,52,320,24]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":6,"text":"5. Upload LPJ dan Isi Total Dana Digunakan","textPreview":"5. Upload LPJ dan Isi Total Dana Digunakan","textChars":42,"textLines":1,"bbox":[72,80,620,54]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":6,"text":"Admin tetap menangani LPJ agar surplus, defisit, atau sesuai bisa dihitung otomatis.","textPreview":"Admin tetap menangani LPJ agar surplus, defisit, atau sesuai bisa dihitung otomatis.","textChars":84,"textLines":1,"bbox":[72,128,700,34]}
+{"kind":"shape","id":"sh/yd0z6103","slide":6,"bbox":[842,188,366,420]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":6,"text":"Langkah Upload LPJ","textPreview":"Langkah Upload LPJ","textChars":18,"textLines":1,"bbox":[874,220,220,30]}
+{"kind":"shape","id":"sh/gfmlkjm1","slide":6,"bbox":[876,273,10,10]}
+{"kind":"textbox","id":"sh/r65wjudg","slide":6,"text":"Cari ID ajuan dengan kotak pencarian agar lebih cepat.","textPreview":"Cari ID ajuan dengan kotak pencarian agar lebih cepat.","textChars":54,"textLines":1,"bbox":[896,266,280,54]}
+{"kind":"shape","id":"sh/ylc7u54z","slide":6,"bbox":[876,321,10,10]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":6,"text":"Isi Total Dana Digunakan sesuai realisasi akhir.","textPreview":"Isi Total Dana Digunakan sesuai realisasi akhir.","textChars":48,"textLines":1,"bbox":[896,314,280,54]}
+{"kind":"shape","id":"sh/9s36hcrm","slide":6,"bbox":[876,369,10,10]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":6,"text":"Upload file LPJ JPG, PNG, atau PDF maksimal 10 MB.","textPreview":"Upload file LPJ JPG, PNG, atau PDF maksimal 10 MB.","textChars":50,"textLines":1,"bbox":[896,362,280,62]}
+{"kind":"shape","id":"sh/rmhk3q5o","slide":6,"bbox":[876,417,10,10]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":6,"text":"Klik Upload LPJ untuk menyimpan file dan realisasi.","textPreview":"Klik Upload LPJ untuk menyimpan file dan realisasi.","textChars":51,"textLines":1,"bbox":[896,410,280,62]}
+{"kind":"shape","id":"sh/90je9cvi","slide":6,"bbox":[876,465,10,10]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":6,"text":"Dashboard akan menghitung selisih dan status dana otomatis.","textPreview":"Dashboard akan menghitung selisih dan status dana otomatis.","textChars":59,"textLines":1,"bbox":[896,458,280,62]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":6,"text":"Panduan Ajuan Pembayaran • Slide 6","textPreview":"Panduan Ajuan Pembayaran • Slide 6","textChars":34,"textLines":1,"bbox":[72,684,420,18]}
+{"kind":"image","id":"im/q5o7qpg3","slide":6,"name":"","geometry":"roundRect","alt":"05-admin-upload-lpj.png","bbox":[72,188,740,420]}
+{"kind":"notes","id":"nt/x6wsek","slide":6,"text":""}
+{"kind":"slide","id":"sl/fulhbe","slide":7,"title":"ROLE DIRKEU","textShapes":9}
+{"kind":"textbox","id":"sh/ed8v6psf","slide":7,"text":"ROLE DIRKEU","textPreview":"ROLE DIRKEU","textChars":11,"textLines":1,"bbox":[72,52,320,24]}
+{"kind":"textbox","id":"sh/p4r65wju","slide":7,"text":"6. Menu Utama Dirkeu","textPreview":"6. Menu Utama Dirkeu","textChars":20,"textLines":1,"bbox":[72,80,620,54]}
+{"kind":"textbox","id":"sh/wjudg7ad","slide":7,"text":"Dirkeu berfokus pada review ajuan dan pelengkapan bukti transfer.","textPreview":"Dirkeu berfokus pada review ajuan dan pelengkapan bukti transfer.","textChars":65,"textLines":1,"bbox":[72,128,700,34]}
+{"kind":"shape","id":"sh/7qpg3ex0","slide":7,"bbox":[72,182,356,444]}
+{"kind":"textbox","id":"sh/i5sneloj","slide":7,"text":"Hak Akses Dirkeu","textPreview":"Hak Akses Dirkeu","textChars":16,"textLines":1,"bbox":[102,214,220,30]}
+{"kind":"shape","id":"sh/pwb2hwfy","slide":7,"bbox":[104,269,10,10]}
+{"kind":"textbox","id":"sh/0bi9s36h","slide":7,"text":"Menu Review Dirkeu untuk memutuskan ajuan.","textPreview":"Menu Review Dirkeu untuk memutuskan ajuan.","textChars":42,"textLines":1,"bbox":[124,262,280,52]}
+{"kind":"shape","id":"sh/7ed8bat4","slide":7,"bbox":[104,317,10,10]}
+{"kind":"textbox","id":"sh/itgfmlkj","slide":7,"text":"Menu Bukti TF untuk melengkapi file transfer atau menandai tanpa bukti.","textPreview":"Menu Bukti TF untuk melengkapi file transfer atau menandai tanpa bukti.","textChars":71,"textLines":1,"bbox":[124,310,280,72]}
+{"kind":"shape","id":"sh/cvixczed","slide":7,"bbox":[104,365,10,10]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":7,"text":"Dirkeu tidak menginput ajuan baru dan tidak mengupload LPJ.","textPreview":"Dirkeu tidak menginput ajuan baru dan tidak mengupload LPJ.","textChars":59,"textLines":1,"bbox":[124,358,280,64]}
+{"kind":"shape","id":"sh/upwb2hwf","slide":7,"bbox":[104,413,10,10]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":7,"text":"Setelah approve, ajuan otomatis dianggap sudah dibayar.","textPreview":"Setelah approve, ajuan otomatis dianggap sudah dibayar.","textChars":55,"textLines":1,"bbox":[124,406,280,62]}
+{"kind":"textbox","id":"sh/54zidony","slide":7,"text":"Panduan Ajuan Pembayaran • Slide 7","textPreview":"Panduan Ajuan Pembayaran • Slide 7","textChars":34,"textLines":1,"bbox":[72,684,420,18]}
+{"kind":"image","id":"im/rqd4vmtw","slide":7,"name":"","geometry":"roundRect","alt":"06-dirkeu-review.png","bbox":[462,182,746,444]}
+{"kind":"notes","id":"nt/fulhbe","slide":7,"text":""}
+{"kind":"slide","id":"sl/n2j3pm","slide":8,"title":"REVIEW DIRKEU","textShapes":10}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":8,"text":"REVIEW DIRKEU","textPreview":"REVIEW DIRKEU","textChars":13,"textLines":1,"bbox":[72,52,320,24]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":8,"text":"7. Filter Status Review Dirkeu","textPreview":"7. Filter Status Review Dirkeu","textChars":30,"textLines":1,"bbox":[72,80,620,54]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":8,"text":"Kartu status pada halaman Review Dirkeu sekarang bisa diklik untuk memfilter daftar di bawahnya.","textPreview":"Kartu status pada halaman Review Dirkeu sekarang bisa diklik untuk memfilter daftar di bawahnya.","textChars":96,"textLines":1,"bbox":[72,128,700,34]}
+{"kind":"shape","id":"sh/65wjudg7","slide":8,"bbox":[860,178,348,458]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":8,"text":"Cara Pakai Kartu Status","textPreview":"Cara Pakai Kartu Status","textChars":23,"textLines":1,"bbox":[892,210,250,30]}
+{"kind":"shape","id":"sh/obm58z25","slide":8,"bbox":[894,265,10,10]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":8,"text":"Klik Menunggu Review untuk fokus ke ajuan yang belum diputuskan.","textPreview":"Klik Menunggu Review untuk fokus ke ajuan yang belum diputuskan.","textChars":64,"textLines":1,"bbox":[914,258,280,62]}
+{"kind":"shape","id":"sh/a9w3m94f","slide":8,"bbox":[894,313,10,10]}
+{"kind":"textbox","id":"sh/8bat47y1","slide":8,"text":"Klik Perlu Revisi untuk melihat ajuan yang dikembalikan ke admin.","textPreview":"Klik Perlu Revisi untuk melihat ajuan yang dikembalikan ke admin.","textChars":65,"textLines":1,"bbox":[914,306,280,72]}
+{"kind":"shape","id":"sh/1w7mp0bi","slide":8,"bbox":[894,361,10,10]}
+{"kind":"textbox","id":"sh/q5o7qpg3","slide":8,"text":"Klik Ditolak untuk histori ajuan yang sudah ditutup.","textPreview":"Klik Ditolak untuk histori ajuan yang sudah ditutup.","textChars":52,"textLines":1,"bbox":[914,354,280,62]}
+{"kind":"shape","id":"sh/jqh0fepk","slide":8,"bbox":[894,409,10,10]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":8,"text":"Klik Disetujui untuk melihat ajuan yang sudah dibayar oleh Dirkeu.","textPreview":"Klik Disetujui untuk melihat ajuan yang sudah dibayar oleh Dirkeu.","textChars":66,"textLines":1,"bbox":[914,402,280,72]}
+{"kind":"shape","id":"sh/18jqh0fe","slide":8,"bbox":[894,457,10,10]}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":8,"text":"Filter keyword, tahun, dan cabang tetap bisa dipakai bersamaan.","textPreview":"Filter keyword, tahun, dan cabang tetap bisa dipakai bersamaan.","textChars":63,"textLines":1,"bbox":[914,450,280,62]}
+{"kind":"textbox","id":"sh/j2t83itg","slide":8,"text":"Panduan Ajuan Pembayaran • Slide 8","textPreview":"Panduan Ajuan Pembayaran • Slide 8","textChars":34,"textLines":1,"bbox":[72,684,420,18]}
+{"kind":"image","id":"im/ed8v6psf","slide":8,"name":"","geometry":"roundRect","alt":"06-dirkeu-review.png","bbox":[72,178,760,458]}
+{"kind":"notes","id":"nt/n2j3pm","slide":8,"text":""}
+{"kind":"slide","id":"sl/2b1tmc","slide":9,"title":"DETAIL KEPUTUSAN","textShapes":10}
+{"kind":"textbox","id":"sh/pwb2hwfy","slide":9,"text":"DETAIL KEPUTUSAN","textPreview":"DETAIL KEPUTUSAN","textChars":16,"textLines":1,"bbox":[72,52,320,24]}
+{"kind":"textbox","id":"sh/i5sneloj","slide":9,"text":"8. Buka Detail Ajuan dan Beri Keputusan","textPreview":"8. Buka Detail Ajuan dan Beri Keputusan","textChars":39,"textLines":1,"bbox":[72,80,620,54]}
+{"kind":"textbox","id":"sh/7qpg3ex0","slide":9,"text":"Di halaman detail, Dirkeu dapat mengecek data rekening, nominal, memo, dan status pembayaran.","textPreview":"Di halaman detail, Dirkeu dapat mengecek data rekening, nominal, memo, dan status pembayaran.","textChars":93,"textLines":1,"bbox":[72,128,700,34]}
+{"kind":"shape","id":"sh/p4r65wju","slide":9,"bbox":[856,178,352,458]}
+{"kind":"textbox","id":"sh/ed8v6psf","slide":9,"text":"Aksi di Halaman Detail","textPreview":"Aksi di Halaman Detail","textChars":22,"textLines":1,"bbox":[888,210,240,30]}
+{"kind":"shape","id":"sh/7y1kre1w","slide":9,"bbox":[890,265,10,10]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":9,"text":"Cek tanggal ajuan, cabang, nama pengaju, rekening, bank, dan nominal.","textPreview":"Cek tanggal ajuan, cabang, nama pengaju, rekening, bank, dan nominal.","textChars":69,"textLines":1,"bbox":[910,258,280,72]}
+{"kind":"shape","id":"sh/p8nqxs72","slide":9,"bbox":[890,313,10,10]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":9,"text":"Buka memo jika perlu verifikasi dokumen pengajuan.","textPreview":"Buka memo jika perlu verifikasi dokumen pengajuan.","textChars":50,"textLines":1,"bbox":[910,306,280,52]}
+{"kind":"shape","id":"sh/83itgfml","slide":9,"bbox":[890,361,10,10]}
+{"kind":"textbox","id":"sh/fil0rqd4","slide":9,"text":"Jika status masih review aktif, pilih Setujui, Tolak, atau Minta Revisi.","textPreview":"Jika status masih review aktif, pilih Setujui, Tolak, atau Minta Revisi.","textChars":72,"textLines":1,"bbox":[910,354,280,72]}
+{"kind":"shape","id":"sh/qxs72x4n","slide":9,"bbox":[890,409,10,10]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":9,"text":"Catatan review akan terlihat kembali oleh admin.","textPreview":"Catatan review akan terlihat kembali oleh admin.","textChars":48,"textLines":1,"bbox":[910,402,280,52]}
+{"kind":"shape","id":"sh/4fu18jqh","slide":9,"bbox":[890,457,10,10]}
+{"kind":"textbox","id":"sh/fu18jqh0","slide":9,"text":"Approve sekarang berarti ajuan langsung dianggap dibayar.","textPreview":"Approve sekarang berarti ajuan langsung dianggap dibayar.","textChars":57,"textLines":1,"bbox":[910,450,280,62]}
+{"kind":"textbox","id":"sh/m94fu18j","slide":9,"text":"Panduan Ajuan Pembayaran • Slide 9","textPreview":"Panduan Ajuan Pembayaran • Slide 9","textChars":34,"textLines":1,"bbox":[72,684,420,18]}
+{"kind":"image","id":"im/5wjudg7a","slide":9,"name":"","geometry":"roundRect","alt":"07-dirkeu-detail.png","bbox":[72,178,756,458]}
+{"kind":"notes","id":"nt/2b1tmc","slide":9,"text":""}
+{"kind":"slide","id":"sl/5xtcha","slide":10,"title":"BUKTI TF OPSIONAL","textShapes":9}
+{"kind":"textbox","id":"sh/z61032ls","slide":10,"text":"BUKTI TF OPSIONAL","textPreview":"BUKTI TF OPSIONAL","textChars":17,"textLines":1,"bbox":[72,52,320,24]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":10,"text":"9. Upload Bukti TF atau Tanpa Bukti","textPreview":"9. Upload Bukti TF atau Tanpa Bukti","textChars":35,"textLines":1,"bbox":[72,80,620,54]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":10,"text":"Halaman ini khusus Dirkeu untuk melengkapi pembayaran setelah approve.","textPreview":"Halaman ini khusus Dirkeu untuk melengkapi pembayaran setelah approve.","textChars":70,"textLines":1,"bbox":[72,128,700,34]}
+{"kind":"shape","id":"sh/zupwb2hw","slide":10,"bbox":[860,178,348,458]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":10,"text":"Pilihan yang Tersedia","textPreview":"Pilihan yang Tersedia","textChars":21,"textLines":1,"bbox":[892,210,230,30]}
+{"kind":"shape","id":"sh/h0fepkzu","slide":10,"bbox":[894,265,10,10]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":10,"text":"Upload Bukti TF bila ada file transfer yang perlu dilampirkan.","textPreview":"Upload Bukti TF bila ada file transfer yang perlu dilampirkan.","textChars":62,"textLines":1,"bbox":[914,258,280,62]}
+{"kind":"shape","id":"sh/zqtcj6to","slide":10,"bbox":[894,313,10,10]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":10,"text":"Gunakan Tandai Tanpa Bukti TF bila memang tidak ada lampiran.","textPreview":"Gunakan Tandai Tanpa Bukti TF bila memang tidak ada lampiran.","textChars":61,"textLines":1,"bbox":[914,306,280,64]}
+{"kind":"shape","id":"sh/a9w3m94f","slide":10,"bbox":[894,361,10,10]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":10,"text":"Admin bisa melihat update ini di dashboard Cek Ajuan.","textPreview":"Admin bisa melihat update ini di dashboard Cek Ajuan.","textChars":53,"textLines":1,"bbox":[914,354,280,68]}
+{"kind":"shape","id":"sh/sfil0rqd","slide":10,"bbox":[894,409,10,10]}
+{"kind":"textbox","id":"sh/z61032ls","slide":10,"text":"Status akhir: Selesai Dibayar atau Dibayar Tanpa Bukti TF.","textPreview":"Status akhir: Selesai Dibayar atau Dibayar Tanpa Bukti TF.","textChars":58,"textLines":1,"bbox":[914,402,280,68]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":10,"text":"Panduan Ajuan Pembayaran • Slide 10","textPreview":"Panduan Ajuan Pembayaran • Slide 10","textChars":35,"textLines":1,"bbox":[72,684,420,18]}
+{"kind":"image","id":"im/ji5snelo","slide":10,"name":"","geometry":"roundRect","alt":"08-dirkeu-bukti.png","bbox":[72,178,760,458]}
+{"kind":"notes","id":"nt/5xtcha","slide":10,"text":""}
+{"kind":"slide","id":"sl/p42j2u","slide":11,"title":"RINGKASAN ALUR","textShapes":17}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":11,"text":"RINGKASAN ALUR","textPreview":"RINGKASAN ALUR","textChars":14,"textLines":1,"bbox":[72,52,320,24]}
+{"kind":"textbox","id":"sh/mtwra5gb","slide":11,"text":"10. Alur Lengkap dan Troubleshooting","textPreview":"10. Alur Lengkap dan Troubleshooting","textChars":36,"textLines":1,"bbox":[72,80,620,54]}
+{"kind":"textbox","id":"sh/fepkzupw","slide":11,"text":"Satu slide penutup untuk memastikan user cepat paham siapa mengerjakan apa.","textPreview":"Satu slide penutup untuk memastikan user cepat paham siapa mengerjakan apa.","textChars":75,"textLines":1,"bbox":[72,128,700,34]}
+{"kind":"shape","id":"sh/4r65wjud","slide":11,"bbox":[72,176,540,430]}
+{"kind":"textbox","id":"sh/xc3ylc7u","slide":11,"text":"Alur Kerja Singkat","textPreview":"Alur Kerja Singkat","textChars":18,"textLines":1,"bbox":[104,210,240,30]}
+{"kind":"shape","id":"sh/mlkjm1cf","slide":11,"bbox":[106,263,10,10]}
+{"kind":"textbox","id":"sh/f6dcbulw","slide":11,"text":"Admin login, input ajuan, lalu simpan draft.","textPreview":"Admin login, input ajuan, lalu simpan draft.","textChars":44,"textLines":1,"bbox":[126,256,390,52]}
+{"kind":"shape","id":"sh/4fu18jqh","slide":11,"bbox":[106,311,10,10]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":11,"text":"Admin cek ulang lalu ajukan ke Dirkeu.","textPreview":"Admin cek ulang lalu ajukan ke Dirkeu.","textChars":38,"textLines":1,"bbox":[126,304,390,52]}
+{"kind":"shape","id":"sh/lkjm1cfa","slide":11,"bbox":[106,359,10,10]}
+{"kind":"textbox","id":"sh/szqtcj6t","slide":11,"text":"Dirkeu review lalu pilih setujui, tolak, atau minta revisi.","textPreview":"Dirkeu review lalu pilih setujui, tolak, atau minta revisi.","textChars":59,"textLines":1,"bbox":[126,352,390,62]}
+{"kind":"shape","id":"sh/3ex0nuxc","slide":11,"bbox":[106,407,10,10]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":11,"text":"Jika disetujui, ajuan langsung dianggap dibayar.","textPreview":"Jika disetujui, ajuan langsung dianggap dibayar.","textChars":48,"textLines":1,"bbox":[126,400,390,62]}
+{"kind":"shape","id":"sh/l87ed8ba","slide":11,"bbox":[106,455,10,10]}
+{"kind":"textbox","id":"sh/sneloj2t","slide":11,"text":"Dirkeu dapat melengkapi bukti TF atau tanpa bukti.","textPreview":"Dirkeu dapat melengkapi bukti TF atau tanpa bukti.","textChars":50,"textLines":1,"bbox":[126,448,390,62]}
+{"kind":"shape","id":"sh/32lszqtc","slide":11,"bbox":[106,503,10,10]}
+{"kind":"textbox","id":"sh/ahoza1gv","slide":11,"text":"Admin upload LPJ dan isi realisasi bila wajib LPJ.","textPreview":"Admin upload LPJ dan isi realisasi bila wajib LPJ.","textChars":50,"textLines":1,"bbox":[126,496,390,62]}
+{"kind":"shape","id":"sh/lwval87e","slide":11,"bbox":[652,176,556,430]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":11,"text":"Troubleshooting Cepat","textPreview":"Troubleshooting Cepat","textChars":21,"textLines":1,"bbox":[684,210,260,30]}
+{"kind":"shape","id":"sh/sji5snel","slide":11,"bbox":[686,263,10,10]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":11,"text":"Menu tidak sesuai role: logout lalu login ulang.","textPreview":"Menu tidak sesuai role: logout lalu login ulang.","textChars":48,"textLines":1,"bbox":[706,256,400,52]}
+{"kind":"shape","id":"sh/adsji5sn","slide":11,"bbox":[686,311,10,10]}
+{"kind":"textbox","id":"sh/3ylc7u54","slide":11,"text":"Ajuan tidak muncul di review: cek apakah admin sudah ajukan ke Dirkeu.","textPreview":"Ajuan tidak muncul di review: cek apakah admin sudah ajukan ke Dirkeu.","textChars":70,"textLines":1,"bbox":[706,304,400,72]}
+{"kind":"shape","id":"sh/s72x4nap","slide":11,"bbox":[686,359,10,10]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":11,"text":"Status sudah approve tapi belum ada bukti: buka menu Bukti TF untuk melengkapi lampiran.","textPreview":"Status sudah approve tapi belum ada bukti: buka menu Bukti TF untuk melengkapi lampiran.","textChars":88,"textLines":1,"bbox":[706,352,400,82]}
+{"kind":"shape","id":"sh/a5gbq1or","slide":11,"bbox":[686,407,10,10]}
+{"kind":"textbox","id":"sh/3m94fu18","slide":11,"text":"Perlu cek banyak data: gunakan filter, search, sort, dan export Excel.","textPreview":"Perlu cek banyak data: gunakan filter, search, sort, dan export Excel.","textChars":70,"textLines":1,"bbox":[706,400,400,72]}
+{"kind":"shape","id":"sh/s36hcrmh","slide":11,"bbox":[72,626,1136,34]}
+{"kind":"textbox","id":"sh/hoza1gvy","slide":11,"text":"Panduan ini bisa langsung dibagikan ke Admin dan Dirkeu sebagai panduan operasional harian.","textPreview":"Panduan ini bisa langsung dibagikan ke Admin dan Dirkeu sebagai panduan operasional harian.","textChars":91,"textLines":1,"bbox":[102,634,1030,16]}
+{"kind":"textbox","id":"sh/r65wjudg","slide":11,"text":"Panduan Ajuan Pembayaran • Slide 11","textPreview":"Panduan Ajuan Pembayaran • Slide 11","textChars":35,"textLines":1,"bbox":[72,684,420,18]}
+{"kind":"notes","id":"nt/p42j2u","slide":11,"text":""}

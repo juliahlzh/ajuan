@@ -1,0 +1,3 @@
+ALTER TABLE ajuan
+  ADD COLUMN IF NOT EXISTS nama_bank TEXT,
+  ADD COLUMN IF NOT EXISTS nomor_rekening TEXT;

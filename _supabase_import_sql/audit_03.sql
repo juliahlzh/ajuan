@@ -1,0 +1,17 @@
+INSERT INTO public.ajuan_audit_log (id_ajuan,action,changed_fields,created_at) VALUES
+('AJN-20260512-0005','UPLOAD_MEMO','{"link_memo_ajuan": "/memo/AJN-20260512-0005/MemoAjuan_AJN-20260512-0005_20260512.jpeg"}'::jsonb,'2026-05-12T08:31:47'),
+('AJN-20260512-0006','CREATE_AJUAN','{"source": "form_input"}'::jsonb,'2026-05-12T08:33:50'),
+('AJN-20260512-0006','UPLOAD_MEMO','{"link_memo_ajuan": "/memo/AJN-20260512-0006/MemoAjuan_AJN-20260512-0006_20260512.jpeg"}'::jsonb,'2026-05-12T08:33:50'),
+('AJN-20260512-0007','CREATE_AJUAN','{"source": "form_input"}'::jsonb,'2026-05-12T08:36:34'),
+('AJN-20260512-0007','UPLOAD_MEMO','{"link_memo_ajuan": "/memo/AJN-20260512-0007/MemoAjuan_AJN-20260512-0007_20260512.jpeg"}'::jsonb,'2026-05-12T08:36:34'),
+('AJN-20260512-0008','CREATE_AJUAN','{"source": "form_input"}'::jsonb,'2026-05-12T08:42:38'),
+('AJN-20260512-0008','UPLOAD_MEMO','{"link_memo_ajuan": "/memo/AJN-20260512-0008/MemoAjuan_AJN-20260512-0008_20260512.jpeg"}'::jsonb,'2026-05-12T08:42:38'),
+('AJN-20260512-0009','CREATE_AJUAN','{"source": "form_input"}'::jsonb,'2026-05-12T08:43:27'),
+('AJN-20260512-0009','UPLOAD_MEMO','{"link_memo_ajuan": "/memo/AJN-20260512-0009/MemoAjuan_AJN-20260512-0009_20260512.jpeg"}'::jsonb,'2026-05-12T08:44:08'),
+('AJN-20260512-0009','EDIT_AJUAN','{"link_memo_ajuan": {"old": "", "new": "/memo/AJN-20260512-0009/MemoAjuan_AJN-20260512-0009_20260512.jpeg"}}'::jsonb,'2026-05-12T08:44:08'),
+('AJN-20260512-0010','CREATE_AJUAN','{"source": "form_input"}'::jsonb,'2026-05-12T08:45:07'),
+('AJN-20260512-0010','UPLOAD_MEMO','{"link_memo_ajuan": "/memo/AJN-20260512-0010/MemoAjuan_AJN-20260512-0010_20260512.jpeg"}'::jsonb,'2026-05-12T08:45:07'),
+('AJN-20260512-0011','CREATE_AJUAN','{"source": "form_input"}'::jsonb,'2026-05-12T08:46:07'),
+('AJN-20260512-0011','UPLOAD_MEMO','{"link_memo_ajuan": "/memo/AJN-20260512-0011/MemoAjuan_AJN-20260512-0011_20260512.jpeg"}'::jsonb,'2026-05-12T08:46:42'),
+('AJN-20260512-0011','EDIT_AJUAN','{"link_memo_ajuan": {"old": "", "new": "/memo/AJN-20260512-0011/MemoAjuan_AJN-20260512-0011_20260512.jpeg"}}'::jsonb,'2026-05-12T08:46:42'),
+('AJN-20260512-0011','UPLOAD_MEMO','{"link_memo_ajuan": "/memo/AJN-20260512-0011/MemoAjuan_AJN-20260512-0011_20260512.jpeg"}'::jsonb,'2026-05-12T08:48:31');

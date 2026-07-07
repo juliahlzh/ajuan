@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #14213d;
+  --muted: #60708b;
+  --line: #d7e1ea;
+  --paper: #ffffff;
+  --canvas: #edf3f6;
+  --brand: #0f766e;
+  --brand-deep: #0b5d57;
+  --brand-soft: #d7efeb;
+  --amber: #d97706;
+  --amber-soft: #fff2d6;
+  --blue: #2454cc;
+  --blue-soft: #deebff;
+  --rose-soft: #ffe0e0;
+  --shadow-lg: 0 24px 64px rgba(20, 33, 61, 0.12);
+  --shadow-md: 0 16px 36px rgba(20, 33, 61, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.16), transparent 24rem),
+    radial-gradient(circle at top right, rgba(36, 84, 204, 0.08), transparent 22rem),
+    linear-gradient(180deg, #f9fbfc 0%, var(--canvas) 58%, #f4f8fb 100%);
+  font-family: "Trebuchet MS", "Aptos", "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+:where(input, select, textarea, button, a[href]) {
+  scroll-margin-top: 7rem;
+  scroll-margin-bottom: 8rem;
+}
+
+.field {
+  @apply w-full rounded-2xl border border-slate-300/90 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-teal-700 focus:ring-4 focus:ring-teal-700/10;
+}
+
+.label {
+  @apply mb-2 block text-[13px] font-black uppercase tracking-[0.08em] text-slate-700;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-2xl bg-teal-700 px-4 py-3 text-sm font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-teal-800;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm font-bold text-slate-800 transition hover:-translate-y-0.5 hover:border-teal-700 hover:text-teal-800;
+}
+
+.btn-danger {
+  @apply inline-flex items-center justify-center gap-2 rounded-2xl bg-red-600 px-4 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-red-700;
+}
+
+.panel {
+  @apply rounded-[30px] border border-slate-200/80 bg-white shadow-[0_16px_36px_rgba(20,33,61,0.08)];
+}
+
+.section-title {
+  @apply text-xl font-black text-slate-950;
+}
+
+.section-note {
+  @apply mt-1 text-sm text-slate-500;
+}
+
+.page-hero {
+  @apply relative overflow-hidden rounded-[34px] border border-slate-200/80 bg-white px-6 py-6 shadow-[0_24px_64px_rgba(20,33,61,0.1)] md:px-8 md:py-8;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.14), transparent 18rem),
+    radial-gradient(circle at 88% 18%, rgba(36, 84, 204, 0.1), transparent 14rem);
+  pointer-events: none;
+}
+
+.page-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-chip {
+  @apply inline-flex items-center gap-2 rounded-full border border-teal-200 bg-teal-50 px-3 py-1 text-[11px] font-black uppercase tracking-[0.18em] text-teal-800;
+}
+
+.hero-actions {
+  @apply flex flex-wrap gap-3;
+}
+
+.panel-muted {
+  @apply rounded-[28px] border border-slate-200/80 bg-slate-50/80 shadow-[0_12px_28px_rgba(20,33,61,0.05)];
+}
+
+.metric-card {
+  @apply relative overflow-hidden rounded-[28px] border border-slate-200/80 bg-white p-5 shadow-[0_14px_30px_rgba(20,33,61,0.08)];
+}
+
+.metric-card::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(15,118,110,0.85), rgba(36,84,204,0.5));
+}
+
+.metric-label {
+  @apply text-sm font-black uppercase tracking-[0.08em] text-slate-500;
+}
+
+.metric-value {
+  @apply mt-3 text-3xl font-black tracking-tight text-slate-950;
+}
+
+.toolbar-card {
+  @apply rounded-[30px] border border-slate-200/80 bg-white px-5 py-5 shadow-[0_18px_38px_rgba(20,33,61,0.08)];
+}
+
+.toolbar-grid {
+  @apply grid gap-3 md:grid-cols-2 xl:grid-cols-4;
+}
+
+.table-shell {
+  @apply overflow-hidden rounded-[30px] border border-slate-200/80 bg-white shadow-[0_18px_40px_rgba(20,33,61,0.08)];
+}
+
+.kpi-list-card {
+  @apply panel p-5;
+}
+
+.list-stripe {
+  @apply flex items-center justify-between gap-4 rounded-2xl border border-slate-100 bg-slate-50/90 px-4 py-3;
+}
+
+.search-field-wrap:focus-within .search-field-icon {
+  opacity: 0;
+}
+
+.search-field-input:not(:placeholder-shown) ~ .search-field-icon {
+  opacity: 0;
+}

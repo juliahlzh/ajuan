@@ -1,0 +1,1310 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/p42j2u",
+    "id": "p42j2u",
+    "slide": 11,
+    "layoutId": "4b5c3251-f062-47b5-8aa6-6cb5620b9cbe",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "1cdfd1f9-dc77-4ed8-9cc3-50bf23e97d84",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F7FBFC",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Ajuan Guide Screenshot",
+    "colors": {
+      "accent1": "#0F766E",
+      "accent2": "#1D4ED8",
+      "accent3": "#F59E0B",
+      "accent4": "#DC2626",
+      "accent5": "#0891B2",
+      "accent6": "#8B5CF6",
+      "bg1": "#FFFFFF",
+      "bg2": "#EEF6F7",
+      "tx1": "#0F172A",
+      "tx2": "#60708B",
+      "dk1": "#000000",
+      "dk2": "#1E293B",
+      "lt1": "#FFFFFF",
+      "lt2": "#D7E1EA",
+      "hlink": "#1D4ED8",
+      "folHlink": "#7C3AED"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "4b5c3251-f062-47b5-8aa6-6cb5620b9cbe",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "1cdfd1f9-dc77-4ed8-9cc3-50bf23e97d84",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "1cdfd1f9-dc77-4ed8-9cc3-50bf23e97d84",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xkf6dcbu",
+      "id": "1",
+      "bbox": [
+        72,
+        52,
+        320,
+        24
+      ],
+      "geometry": "rect",
+      "text": "RINGKASAN ALUR",
+      "textPreview": "RINGKASAN ALUR",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#0F766E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "RINGKASAN ALUR"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "RINGKASAN ALUR",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#0F766E",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "RINGKASAN ALUR",
+              "fontSize": 12,
+              "color": "#0F766E",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mtwra5gb",
+      "id": "2",
+      "bbox": [
+        72,
+        80,
+        620,
+        54
+      ],
+      "geometry": "rect",
+      "text": "10. Alur Lengkap dan Troubleshooting",
+      "textPreview": "10. Alur Lengkap dan Troubleshooting",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "fontSize": 30,
+        "typeface": "+mn-lt",
+        "color": "#0F172A",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "10. Alur Lengkap dan Troubleshooting"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "10. Alur Lengkap dan Troubleshooting",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "color": "#0F172A",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "10. Alur Lengkap dan Troubleshooting",
+              "fontSize": 30,
+              "color": "#0F172A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fepkzupw",
+      "id": "3",
+      "bbox": [
+        72,
+        128,
+        700,
+        34
+      ],
+      "geometry": "rect",
+      "text": "Satu slide penutup untuk memastikan user cepat paham siapa mengerjakan apa.",
+      "textPreview": "Satu slide penutup untuk memastikan user cepat paham siapa mengerjakan apa.",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#64748B",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Satu slide penutup untuk memastikan user cepat paham siapa mengerjakan apa."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Satu slide penutup untuk memastikan user cepat paham siapa mengerjakan apa.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#64748B"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Satu slide penutup untuk memastikan user cepat paham siapa mengerjakan apa.",
+              "fontSize": 17,
+              "color": "#64748B"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4r65wjud",
+      "id": "4",
+      "bbox": [
+        72,
+        176,
+        540,
+        430
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D7E1EA",
+      "lineWidth": 1
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xc3ylc7u",
+      "id": "5",
+      "bbox": [
+        104,
+        210,
+        240,
+        30
+      ],
+      "geometry": "rect",
+      "text": "Alur Kerja Singkat",
+      "textPreview": "Alur Kerja Singkat",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#0F172A",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Alur Kerja Singkat"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Alur Kerja Singkat",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#0F172A",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Alur Kerja Singkat",
+              "fontSize": 24,
+              "color": "#0F172A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mlkjm1cf",
+      "id": "6",
+      "bbox": [
+        106,
+        263,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/f6dcbulw",
+      "id": "7",
+      "bbox": [
+        126,
+        256,
+        390,
+        52
+      ],
+      "geometry": "rect",
+      "text": "Admin login, input ajuan, lalu simpan draft.",
+      "textPreview": "Admin login, input ajuan, lalu simpan draft.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Admin login, input ajuan, lalu simpan draft."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Admin login, input ajuan, lalu simpan draft.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Admin login, input ajuan, lalu simpan draft.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4fu18jqh",
+      "id": "8",
+      "bbox": [
+        106,
+        311,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x0nuxc3y",
+      "id": "9",
+      "bbox": [
+        126,
+        304,
+        390,
+        52
+      ],
+      "geometry": "rect",
+      "text": "Admin cek ulang lalu ajukan ke Dirkeu.",
+      "textPreview": "Admin cek ulang lalu ajukan ke Dirkeu.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Admin cek ulang lalu ajukan ke Dirkeu."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Admin cek ulang lalu ajukan ke Dirkeu.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Admin cek ulang lalu ajukan ke Dirkeu.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lkjm1cfa",
+      "id": "10",
+      "bbox": [
+        106,
+        359,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/szqtcj6t",
+      "id": "11",
+      "bbox": [
+        126,
+        352,
+        390,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Dirkeu review lalu pilih setujui, tolak, atau minta revisi.",
+      "textPreview": "Dirkeu review lalu pilih setujui, tolak, atau minta revisi.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Dirkeu review lalu pilih setujui, tolak, atau minta"
+          },
+          {
+            "index": 2,
+            "text": "revisi."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Dirkeu review lalu pilih setujui, tolak, atau minta revisi.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Dirkeu review lalu pilih setujui, tolak, atau minta revisi.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3ex0nuxc",
+      "id": "12",
+      "bbox": [
+        106,
+        407,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/at47y1kr",
+      "id": "13",
+      "bbox": [
+        126,
+        400,
+        390,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Jika disetujui, ajuan langsung dianggap dibayar.",
+      "textPreview": "Jika disetujui, ajuan langsung dianggap dibayar.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Jika disetujui, ajuan langsung dianggap dibayar."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Jika disetujui, ajuan langsung dianggap dibayar.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Jika disetujui, ajuan langsung dianggap dibayar.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l87ed8ba",
+      "id": "14",
+      "bbox": [
+        106,
+        455,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sneloj2t",
+      "id": "15",
+      "bbox": [
+        126,
+        448,
+        390,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Dirkeu dapat melengkapi bukti TF atau tanpa bukti.",
+      "textPreview": "Dirkeu dapat melengkapi bukti TF atau tanpa bukti.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Dirkeu dapat melengkapi bukti TF atau tanpa"
+          },
+          {
+            "index": 2,
+            "text": "bukti."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Dirkeu dapat melengkapi bukti TF atau tanpa bukti.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Dirkeu dapat melengkapi bukti TF atau tanpa bukti.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/32lszqtc",
+      "id": "16",
+      "bbox": [
+        106,
+        503,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ahoza1gv",
+      "id": "17",
+      "bbox": [
+        126,
+        496,
+        390,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Admin upload LPJ dan isi realisasi bila wajib LPJ.",
+      "textPreview": "Admin upload LPJ dan isi realisasi bila wajib LPJ.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Admin upload LPJ dan isi realisasi bila wajib LPJ."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Admin upload LPJ dan isi realisasi bila wajib LPJ.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Admin upload LPJ dan isi realisasi bila wajib LPJ.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lwval87e",
+      "id": "18",
+      "bbox": [
+        652,
+        176,
+        556,
+        430
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D7E1EA",
+      "lineWidth": 1
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wb2hwfyx",
+      "id": "19",
+      "bbox": [
+        684,
+        210,
+        260,
+        30
+      ],
+      "geometry": "rect",
+      "text": "Troubleshooting Cepat",
+      "textPreview": "Troubleshooting Cepat",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#DC2626",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Troubleshooting Cepat"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Troubleshooting Cepat",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#DC2626",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Troubleshooting Cepat",
+              "fontSize": 24,
+              "color": "#DC2626",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sji5snel",
+      "id": "20",
+      "bbox": [
+        686,
+        263,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#DC2626",
+      "lineColor": "#DC2626",
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h4byhgn2",
+      "id": "21",
+      "bbox": [
+        706,
+        256,
+        400,
+        52
+      ],
+      "geometry": "rect",
+      "text": "Menu tidak sesuai role: logout lalu login ulang.",
+      "textPreview": "Menu tidak sesuai role: logout lalu login ulang.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Menu tidak sesuai role: logout lalu login ulang."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Menu tidak sesuai role: logout lalu login ulang.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Menu tidak sesuai role: logout lalu login ulang.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/adsji5sn",
+      "id": "22",
+      "bbox": [
+        686,
+        311,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#DC2626",
+      "lineColor": "#DC2626",
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3ylc7u54",
+      "id": "23",
+      "bbox": [
+        706,
+        304,
+        400,
+        72
+      ],
+      "geometry": "rect",
+      "text": "Ajuan tidak muncul di review: cek apakah admin sudah ajukan ke Dirkeu.",
+      "textPreview": "Ajuan tidak muncul di review: cek apakah admin sudah ajukan ke Dirkeu.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Ajuan tidak muncul di review: cek apakah admin"
+          },
+          {
+            "index": 2,
+            "text": "sudah ajukan ke Dirkeu."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Ajuan tidak muncul di review: cek apakah admin sudah ajukan ke Dirkeu.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Ajuan tidak muncul di review: cek apakah admin sudah ajukan ke Dirkeu.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/s72x4nap",
+      "id": "24",
+      "bbox": [
+        686,
+        359,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#DC2626",
+      "lineColor": "#DC2626",
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lszqtcj6",
+      "id": "25",
+      "bbox": [
+        706,
+        352,
+        400,
+        82
+      ],
+      "geometry": "rect",
+      "text": "Status sudah approve tapi belum ada bukti: buka menu Bukti TF untuk melengkapi lampiran.",
+      "textPreview": "Status sudah approve tapi belum ada bukti: buka menu Bukti TF untuk melengkapi lampiran.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Status sudah approve tapi belum ada bukti: buka"
+          },
+          {
+            "index": 2,
+            "text": "menu Bukti TF untuk melengkapi lampiran."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Status sudah approve tapi belum ada bukti: buka menu Bukti TF untuk melengkapi lampiran.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Status sudah approve tapi belum ada bukti: buka menu Bukti TF untuk melengkapi lampiran.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a5gbq1or",
+      "id": "26",
+      "bbox": [
+        686,
+        407,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#DC2626",
+      "lineColor": "#DC2626",
+      "lineWidth": 0
+    },
+    {
+      "order": 27,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3m94fu18",
+      "id": "27",
+      "bbox": [
+        706,
+        400,
+        400,
+        72
+      ],
+      "geometry": "rect",
+      "text": "Perlu cek banyak data: gunakan filter, search, sort, dan export Excel.",
+      "textPreview": "Perlu cek banyak data: gunakan filter, search, sort, dan export Excel.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Perlu cek banyak data: gunakan filter, search, sort,"
+          },
+          {
+            "index": 2,
+            "text": "dan export Excel."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Perlu cek banyak data: gunakan filter, search, sort, dan export Excel.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Perlu cek banyak data: gunakan filter, search, sort, dan export Excel.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 28,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/s36hcrmh",
+      "id": "28",
+      "bbox": [
+        72,
+        626,
+        1136,
+        34
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 1
+    },
+    {
+      "order": 29,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hoza1gvy",
+      "id": "29",
+      "bbox": [
+        102,
+        634,
+        1030,
+        16
+      ],
+      "geometry": "rect",
+      "text": "Panduan ini bisa langsung dibagikan ke Admin dan Dirkeu sebagai panduan operasional harian.",
+      "textPreview": "Panduan ini bisa langsung dibagikan ke Admin dan Dirkeu sebagai panduan operasional harian.",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Panduan ini bisa langsung dibagikan ke Admin dan Dirkeu sebagai panduan operasional harian."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Panduan ini bisa langsung dibagikan ke Admin dan Dirkeu sebagai panduan operasional harian.",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Panduan ini bisa langsung dibagikan ke Admin dan Dirkeu sebagai panduan operasional harian.",
+              "fontSize": 14,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 30,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r65wjudg",
+      "id": "30",
+      "bbox": [
+        72,
+        684,
+        420,
+        18
+      ],
+      "geometry": "rect",
+      "text": "Panduan Ajuan Pembayaran • Slide 11",
+      "textPreview": "Panduan Ajuan Pembayaran • Slide 11",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#64748B",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Panduan Ajuan Pembayaran • Slide 11"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Panduan Ajuan Pembayaran • Slide 11",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#64748B",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Panduan Ajuan Pembayaran • Slide 11",
+              "fontSize": 11,
+              "color": "#64748B",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,12 @@
+Sumber utama:
+1. Requirement user pada thread Codex project D:/Ajuan.
+2. Kredensial user yang diminta tampil di deck:
+   - Admin: username finance / password keuangannf
+   - Dirkeu: username dirkeu / password direkturkeuangan
+3. Workflow final:
+   - Admin input ajuan
+   - Admin ajukan ke Dirkeu
+   - Dirkeu review
+   - Jika disetujui, ajuan masuk proses pembayaran
+   - Dirkeu dapat upload bukti TF atau tandai Dibayar Tanpa Bukti TF
+   - Admin melihat hasil dari dashboard

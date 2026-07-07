@@ -1,0 +1,8 @@
+Slide 1: Cover deck
+Slide 2: Login dan kredensial
+Slide 3: Pembagian role
+Slide 4: Alur Admin
+Slide 5: Langkah kerja Admin
+Slide 6: Alur Dirkeu
+Slide 7: Bukti TF opsional dan status akhir
+Slide 8: Tips penggunaan dan troubleshooting

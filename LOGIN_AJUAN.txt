@@ -1,0 +1,22 @@
+Login Aplikasi Ajuan Pembayaran
+
+URL:
+https://ajuan-pembayaran.vercel.app
+
+Admin
+Username:
+finance
+Password:
+keuangannf
+
+Dirkeu
+Username:
+dirkeu
+Password:
+direkturkeuangan
+
+Catatan:
+- Simpan file ini hanya di perangkat internal.
+- Jangan kirim password ini ke chat publik atau email umum.
+- Jika password admin ingin diganti, update env Vercel `APP_ADMIN_PASS` lalu redeploy.
+- Jika password dirkeu ingin diganti, update env Vercel `APP_DIRKEU_PASS` lalu redeploy.

@@ -1,0 +1,1158 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/7hg362",
+    "id": "7hg362",
+    "slide": 2,
+    "layoutId": "6ac5f4d7-a1b7-444b-873a-447164b1a1ad",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "51db5bac-5793-4fed-822c-da7c6e625fb4",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F7FBFC",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Ajuan Finance Guide",
+    "colors": {
+      "accent1": "#0F766E",
+      "accent2": "#1D4ED8",
+      "accent3": "#F59E0B",
+      "accent4": "#DC2626",
+      "accent5": "#7C3AED",
+      "accent6": "#0891B2",
+      "bg1": "#FFFFFF",
+      "bg2": "#EEF6F7",
+      "tx1": "#14213D",
+      "tx2": "#60708B",
+      "dk1": "#000000",
+      "dk2": "#1E293B",
+      "lt1": "#FFFFFF",
+      "lt2": "#D7E1EA",
+      "hlink": "#1D4ED8",
+      "folHlink": "#7C3AED"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "6ac5f4d7-a1b7-444b-873a-447164b1a1ad",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "51db5bac-5793-4fed-822c-da7c6e625fb4",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "51db5bac-5793-4fed-822c-da7c6e625fb4",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/54zidony",
+      "id": "1",
+      "bbox": [
+        72,
+        56,
+        500,
+        48
+      ],
+      "geometry": "rect",
+      "text": "1. Login dan Akun User",
+      "textPreview": "1. Login dan Akun User",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "fontSize": 30,
+        "typeface": "+mn-lt",
+        "color": "#14213D",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1. Login dan Akun User"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1. Login dan Akun User",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "color": "#14213D",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1. Login dan Akun User",
+              "fontSize": 30,
+              "color": "#14213D",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/udg7adsj",
+      "id": "2",
+      "bbox": [
+        72,
+        102,
+        680,
+        30
+      ],
+      "geometry": "rect",
+      "text": "Gunakan akun sesuai role agar menu yang tampil sesuai tugas masing-masing.",
+      "textPreview": "Gunakan akun sesuai role agar menu yang tampil sesuai tugas masing-masing.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#60708B",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Gunakan akun sesuai role agar menu yang tampil sesuai tugas masing-masing."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Gunakan akun sesuai role agar menu yang tampil sesuai tugas masing-masing.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#60708B"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Gunakan akun sesuai role agar menu yang tampil sesuai tugas masing-masing.",
+              "fontSize": 18,
+              "color": "#60708B"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nyd0z610",
+      "id": "3",
+      "bbox": [
+        72,
+        160,
+        520,
+        238
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D7E1EA",
+      "lineWidth": 1
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cvixczed",
+      "id": "4",
+      "bbox": [
+        104,
+        192,
+        180,
+        28
+      ],
+      "geometry": "rect",
+      "text": "Akun Admin",
+      "textPreview": "Akun Admin",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#0F766E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Akun Admin"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Akun Admin",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#0F766E",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Akun Admin",
+              "fontSize": 24,
+              "color": "#0F766E",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5gbq1ory",
+      "id": "5",
+      "bbox": [
+        106,
+        247,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/upwb2hwf",
+      "id": "6",
+      "bbox": [
+        126,
+        240,
+        390,
+        44
+      ],
+      "geometry": "rect",
+      "text": "Username: finance",
+      "textPreview": "Username: finance",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Username: finance"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Username: finance",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Username: finance",
+              "fontSize": 20,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nap4r65w",
+      "id": "7",
+      "bbox": [
+        106,
+        291,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/c7u54zid",
+      "id": "8",
+      "bbox": [
+        126,
+        284,
+        390,
+        44
+      ],
+      "geometry": "rect",
+      "text": "Password: keuangannf",
+      "textPreview": "Password: keuangannf",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Password: keuangannf"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Password: keuangannf",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Password: keuangannf",
+              "fontSize": 20,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1orytsvu",
+      "id": "9",
+      "bbox": [
+        106,
+        335,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l0rqd4vm",
+      "id": "10",
+      "bbox": [
+        126,
+        328,
+        390,
+        64
+      ],
+      "geometry": "rect",
+      "text": "Akses: Dashboard, Input Ajuan, Import Sheet, Upload LPJ",
+      "textPreview": "Akses: Dashboard, Input Ajuan, Import Sheet, Upload LPJ",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Akses: Dashboard, Input Ajuan, Import Sheet,"
+          },
+          {
+            "index": 2,
+            "text": "Upload LPJ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Akses: Dashboard, Input Ajuan, Import Sheet, Upload LPJ",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Akses: Dashboard, Input Ajuan, Import Sheet, Upload LPJ",
+              "fontSize": 20,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wfyxobm5",
+      "id": "11",
+      "bbox": [
+        640,
+        160,
+        520,
+        238
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D7E1EA",
+      "lineWidth": 1
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7u54zido",
+      "id": "12",
+      "bbox": [
+        672,
+        192,
+        180,
+        28
+      ],
+      "geometry": "rect",
+      "text": "Akun Dirkeu",
+      "textPreview": "Akun Dirkeu",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#1D4ED8",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Akun Dirkeu"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Akun Dirkeu",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#1D4ED8",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Akun Dirkeu",
+              "fontSize": 24,
+              "color": "#1D4ED8",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ed8bat47",
+      "id": "13",
+      "bbox": [
+        674,
+        247,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#1D4ED8",
+      "lineColor": "#1D4ED8",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lc7u54zi",
+      "id": "14",
+      "bbox": [
+        694,
+        240,
+        390,
+        44
+      ],
+      "geometry": "rect",
+      "text": "Username: dirkeu",
+      "textPreview": "Username: dirkeu",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Username: dirkeu"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Username: dirkeu",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Username: dirkeu",
+              "fontSize": 20,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wra5gbq1",
+      "id": "15",
+      "bbox": [
+        674,
+        291,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#1D4ED8",
+      "lineColor": "#1D4ED8",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/36hcrmhk",
+      "id": "16",
+      "bbox": [
+        694,
+        284,
+        390,
+        44
+      ],
+      "geometry": "rect",
+      "text": "Password: direkturkeuangan",
+      "textPreview": "Password: direkturkeuangan",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Password: direkturkeuangan"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Password: direkturkeuangan",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Password: direkturkeuangan",
+              "fontSize": 20,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/eloj2t83",
+      "id": "17",
+      "bbox": [
+        674,
+        335,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#1D4ED8",
+      "lineColor": "#1D4ED8",
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pg3ex0nu",
+      "id": "18",
+      "bbox": [
+        694,
+        328,
+        390,
+        64
+      ],
+      "geometry": "rect",
+      "text": "Akses: Review Dirkeu dan Bukti TF",
+      "textPreview": "Akses: Review Dirkeu dan Bukti TF",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Akses: Review Dirkeu dan Bukti TF"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Akses: Review Dirkeu dan Bukti TF",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Akses: Review Dirkeu dan Bukti TF",
+              "fontSize": 20,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wval87ed",
+      "id": "19",
+      "bbox": [
+        72,
+        438,
+        1088,
+        164
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EAF6F4",
+      "lineColor": "#B7E4DC",
+      "lineWidth": 1
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w3m94fu1",
+      "id": "20",
+      "bbox": [
+        104,
+        468,
+        180,
+        28
+      ],
+      "geometry": "rect",
+      "text": "Tips Login",
+      "textPreview": "Tips Login",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#14213D",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Tips Login"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Tips Login",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#14213D",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Tips Login",
+              "fontSize": 22,
+              "color": "#14213D",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/loj2t83i",
+      "id": "21",
+      "bbox": [
+        106,
+        519,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ex0nuxc3",
+      "id": "22",
+      "bbox": [
+        126,
+        512,
+        920,
+        44
+      ],
+      "geometry": "rect",
+      "text": "Buka URL aplikasi lalu masukkan username dan password sesuai role.",
+      "textPreview": "Buka URL aplikasi lalu masukkan username dan password sesuai role.",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Buka URL aplikasi lalu masukkan username dan password sesuai role."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Buka URL aplikasi lalu masukkan username dan password sesuai role.",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Buka URL aplikasi lalu masukkan username dan password sesuai role.",
+              "fontSize": 20,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3itgfmlk",
+      "id": "23",
+      "bbox": [
+        106,
+        561,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wb2hwfyx",
+      "id": "24",
+      "bbox": [
+        126,
+        554,
+        920,
+        44
+      ],
+      "geometry": "rect",
+      "text": "Jika ingin tetap login, centang opsi ingat login selama 30 hari.",
+      "textPreview": "Jika ingin tetap login, centang opsi ingat login selama 30 hari.",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Jika ingin tetap login, centang opsi ingat login selama 30 hari."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Jika ingin tetap login, centang opsi ingat login selama 30 hari.",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Jika ingin tetap login, centang opsi ingat login selama 30 hari.",
+              "fontSize": 20,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lwval87e",
+      "id": "25",
+      "bbox": [
+        106,
+        603,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e9cvixcz",
+      "id": "26",
+      "bbox": [
+        126,
+        596,
+        920,
+        60
+      ],
+      "geometry": "rect",
+      "text": "Jika menu tidak sesuai role, logout lalu login ulang memakai akun yang benar.",
+      "textPreview": "Jika menu tidak sesuai role, logout lalu login ulang memakai akun yang benar.",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Jika menu tidak sesuai role, logout lalu login ulang memakai akun yang benar."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Jika menu tidak sesuai role, logout lalu login ulang memakai akun yang benar.",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Jika menu tidak sesuai role, logout lalu login ulang memakai akun yang benar.",
+              "fontSize": 20,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 27,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3q5o7qpg",
+      "id": "27",
+      "bbox": [
+        72,
+        676,
+        360,
+        20
+      ],
+      "geometry": "rect",
+      "text": "Panduan Ajuan Pembayaran • Slide 2",
+      "textPreview": "Panduan Ajuan Pembayaran • Slide 2",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#64748B",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Panduan Ajuan Pembayaran • Slide 2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Panduan Ajuan Pembayaran • Slide 2",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#64748B",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Panduan Ajuan Pembayaran • Slide 2",
+              "fontSize": 11,
+              "color": "#64748B",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

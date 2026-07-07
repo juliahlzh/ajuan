@@ -1,0 +1,6 @@
+QA summary:
+- Slide count: 8
+- Tema warna finance teal/blue konsisten
+- Semua slide memakai editable textbox dan shapes
+- Kredensial Admin dan Dirkeu sudah dimasukkan sesuai instruksi user
+- Final PPTX: D:\Ajuan\outputs\Panduan_Ajuan_Pembayaran_Admin_Dirkeu.pptx

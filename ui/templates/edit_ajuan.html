@@ -1,0 +1,136 @@
+﻿{% extends 'base.html' %}
+{% block content %}
+<section class="card">
+  <h1>Edit Ajuan</h1>
+  <p class="sub">Perbarui data ajuan secara manual, termasuk upload memo jika ada revisi.</p>
+
+  {% if error %}<div class="alert alert-error">{{ error }}</div>{% endif %}
+  {% if success %}<div class="alert alert-success">Data ajuan berhasil diperbarui.</div>{% endif %}
+
+  <form method="post" enctype="multipart/form-data" class="grid-form">
+    <label>ID Ajuan
+      <input type="text" value="{{ form.id_ajuan }}" disabled>
+    </label>
+    <label>Tanggal Ajuan
+      <input type="date" name="tanggal_ajuan" value="{{ form.tanggal_ajuan or '' }}" required>
+    </label>
+
+    <label>Nama Pengaju
+      <input type="text" name="nama_pengaju" value="{{ form.nama_pengaju or '' }}" required>
+    </label>
+    <label>Atas Nama Rekening (Penerima Dana)
+      <input type="text" name="nama_penerima_dana" value="{{ form.nama_penerima_dana or '' }}">
+    </label>
+    <label>Nomor Memo
+      <input type="text" name="nomor_memo" value="{{ form.nomor_memo or '' }}">
+    </label>
+    <label>Perihal
+      <input type="text" name="perihal" value="{{ form.perihal or '' }}">
+    </label>
+    <label>Divisi / Cabang
+      <input list="divisi_cabang_list_edit" name="divisi_cabang" value="{{ form.divisi_cabang or '' }}" required>
+      <datalist id="divisi_cabang_list_edit">
+        {% for d in divisi_options %}
+        <option value="{{ d }}"></option>
+        {% endfor %}
+      </datalist>
+    </label>
+
+    <label>Jenis Ajuan
+      <input type="text" name="jenis_ajuan" value="{{ form.jenis_ajuan or '' }}" required>
+    </label>
+    <label>Nominal
+      <input type="number" min="0" step="0.01" name="nominal" value="{{ form.nominal or '' }}" required>
+    </label>
+    <label>Realisasi LPJ
+      <input type="number" min="0" step="0.01" name="nominal_realisasi" value="{{ form.nominal_realisasi if form.nominal_realisasi is not none else '' }}">
+    </label>
+
+    <label>Status Pembayaran
+      <select name="status">
+        {% set current_status = form.status or 'Menunggu Pembayaran' %}
+        <option value="Menunggu Pembayaran" {% if current_status == 'Menunggu Pembayaran' %}selected{% endif %}>Menunggu Pembayaran</option>
+        <option value="Diproses" {% if current_status == 'Diproses' %}selected{% endif %}>Diproses</option>
+        <option value="Selesai Dibayar" {% if current_status == 'Selesai Dibayar' %}selected{% endif %}>Selesai Dibayar</option>
+      </select>
+    </label>
+    <label>Wajib LPJ
+      <select name="wajib_lpj">
+        <option value="1" {% if (form.wajib_lpj|string) != '0' %}selected{% endif %}>Ya</option>
+        <option value="0" {% if (form.wajib_lpj|string) == '0' %}selected{% endif %}>Tidak</option>
+      </select>
+    </label>
+
+    <label>Set Ulang Jatuh Tempo LPJ
+      <select name="lpj_due_option">
+        <option value="">Pertahankan Tanggal Saat Ini</option>
+        <option value="30">+30 hari dari Tanggal Ajuan</option>
+        <option value="90">+90 hari dari Tanggal Ajuan</option>
+        <option value="365">+1 tahun dari Tanggal Ajuan</option>
+      </select>
+    </label>
+    <label>Tanggal Jatuh Tempo LPJ (manual)
+      <input type="date" name="tanggal_jatuh_tempo_lpj_manual" value="{{ form.tanggal_jatuh_tempo_lpj or '' }}">
+    </label>
+
+    <label>Status LPJ
+      {% set current_lpj = form.status_lpj or 'Belum Upload' %}
+      <select name="status_lpj">
+        <option value="Belum Upload" {% if current_lpj == 'Belum Upload' %}selected{% endif %}>Belum Upload</option>
+        <option value="Sudah Upload" {% if current_lpj == 'Sudah Upload' %}selected{% endif %}>Sudah Upload</option>
+        <option value="Tidak Wajib" {% if current_lpj == 'Tidak Wajib' %}selected{% endif %}>Tidak Wajib</option>
+      </select>
+    </label>
+    <label>Upload Memo Baru (opsional)
+      <input type="file" name="file_memo" accept=".jpg,.jpeg,.png,.pdf">
+    </label>
+
+    <label class="full">Keterangan
+      <textarea name="keterangan" rows="4">{{ form.keterangan or '' }}</textarea>
+    </label>
+
+    <div class="full">
+      {% if form.link_memo_ajuan %}
+      <p class="muted">Memo saat ini: <a class="btn-link" href="{{ form.link_memo_ajuan }}" target="_blank">Lihat Memo</a></p>
+      {% else %}
+      <p class="muted">Memo saat ini: Belum ada</p>
+      {% endif %}
+    </div>
+
+    <div class="full actions">
+      <button type="submit">Simpan Perubahan</button>
+      <a class="btn-link" href="{{ url_for('cek_ajuan') }}">Kembali ke Cek Ajuan</a>
+    </div>
+  </form>
+
+  <form method="post" action="{{ url_for('delete_ajuan_route', id_ajuan=form.id_ajuan) }}" class="mt16" onsubmit="return confirm('Yakin hapus ajuan ini? Data tidak bisa dikembalikan.');">
+    <button type="submit" class="btn-danger">Hapus Ajuan</button>
+  </form>
+</section>
+
+<section class="card mt16">
+  <h2>Riwayat Perubahan</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Waktu</th>
+          <th>Aksi</th>
+          <th>Detail</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for log in logs %}
+          <tr>
+            <td>{{ log.created_at }}</td>
+            <td>{{ log.action }}</td>
+            <td><span class="muted">{{ log.changed_fields or '-' }}</span></td>
+          </tr>
+        {% else %}
+          <tr><td colspan="3">Belum ada riwayat.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}

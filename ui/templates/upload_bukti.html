@@ -1,0 +1,64 @@
+﻿{% extends 'base.html' %}
+{% block content %}
+<section class="card">
+  <h1>Upload Bukti TF</h1>
+  <p class="sub">Pilih ID ajuan yang masih pending, lalu upload bukti transfer (jpg/png/pdf).</p>
+
+  {% if error %}<div class="alert alert-error">{{ error }}</div>{% endif %}
+  {% if success %}
+    <div class="alert alert-success">
+      Upload berhasil untuk <b>{{ uploaded_id }}</b>.
+      <a href="{{ link_bukti }}" target="_blank">Lihat Bukti TF</a>
+    </div>
+  {% endif %}
+
+  <form method="post" enctype="multipart/form-data" class="grid-form">
+    <label>ID Ajuan (pilih dari list pending)
+      <select name="id_ajuan" required>
+        <option value="">-- pilih ID ajuan --</option>
+        {% for item in pending %}
+          <option value="{{ item.id_ajuan }}">{{ item.id_ajuan }} | {{ item.nama_pengaju }} | {{ item.divisi_cabang }}</option>
+        {% endfor %}
+      </select>
+    </label>
+
+    <label>Upload Foto / PDF
+      <input type="file" name="file_bukti" accept=".jpg,.jpeg,.png,.pdf" required>
+    </label>
+
+    <div class="full actions">
+      <button type="submit">Upload Bukti</button>
+    </div>
+  </form>
+
+  <h2>Daftar Menunggu Pembayaran</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tanggal</th>
+          <th>Nama</th>
+          <th>Divisi / Cabang</th>
+          <th>Nominal</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in pending %}
+          <tr>
+            <td>{{ item.id_ajuan }}</td>
+            <td>{{ item.tanggal_ajuan }}</td>
+            <td>{{ item.nama_pengaju }}</td>
+            <td>{{ item.divisi_cabang }}</td>
+            <td>Rp {{ '{:,.0f}'.format(item.nominal) }}</td>
+            <td><span class="badge pending">{{ item.status }}</span></td>
+          </tr>
+        {% else %}
+          <tr><td colspan="6">Tidak ada data pending.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}

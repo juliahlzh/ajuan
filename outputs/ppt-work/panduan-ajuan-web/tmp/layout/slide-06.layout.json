@@ -1,0 +1,810 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/x6wsek",
+    "id": "x6wsek",
+    "slide": 6,
+    "layoutId": "4b5c3251-f062-47b5-8aa6-6cb5620b9cbe",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "1cdfd1f9-dc77-4ed8-9cc3-50bf23e97d84",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F7FBFC",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Ajuan Guide Screenshot",
+    "colors": {
+      "accent1": "#0F766E",
+      "accent2": "#1D4ED8",
+      "accent3": "#F59E0B",
+      "accent4": "#DC2626",
+      "accent5": "#0891B2",
+      "accent6": "#8B5CF6",
+      "bg1": "#FFFFFF",
+      "bg2": "#EEF6F7",
+      "tx1": "#0F172A",
+      "tx2": "#60708B",
+      "dk1": "#000000",
+      "dk2": "#1E293B",
+      "lt1": "#FFFFFF",
+      "lt2": "#D7E1EA",
+      "hlink": "#1D4ED8",
+      "folHlink": "#7C3AED"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "4b5c3251-f062-47b5-8aa6-6cb5620b9cbe",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "1cdfd1f9-dc77-4ed8-9cc3-50bf23e97d84",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "1cdfd1f9-dc77-4ed8-9cc3-50bf23e97d84",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y1kre1w7",
+      "id": "1",
+      "bbox": [
+        72,
+        52,
+        320,
+        24
+      ],
+      "geometry": "rect",
+      "text": "LPJ & REALISASI",
+      "textPreview": "LPJ & REALISASI",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#0F766E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "LPJ & REALISASI"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "LPJ & REALISASI",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#0F766E",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "LPJ & REALISASI",
+              "fontSize": 12,
+              "color": "#0F766E",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9s36hcrm",
+      "id": "2",
+      "bbox": [
+        72,
+        80,
+        620,
+        54
+      ],
+      "geometry": "rect",
+      "text": "5. Upload LPJ dan Isi Total Dana Digunakan",
+      "textPreview": "5. Upload LPJ dan Isi Total Dana Digunakan",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "fontSize": 30,
+        "typeface": "+mn-lt",
+        "color": "#0F172A",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "5. Upload LPJ dan Isi Total Dana Digunakan"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "5. Upload LPJ dan Isi Total Dana Digunakan",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "color": "#0F172A",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "5. Upload LPJ dan Isi Total Dana Digunakan",
+              "fontSize": 30,
+              "color": "#0F172A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g7adsji5",
+      "id": "3",
+      "bbox": [
+        72,
+        128,
+        700,
+        34
+      ],
+      "geometry": "rect",
+      "text": "Admin tetap menangani LPJ agar surplus, defisit, atau sesuai bisa dihitung otomatis.",
+      "textPreview": "Admin tetap menangani LPJ agar surplus, defisit, atau sesuai bisa dihitung otomatis.",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#64748B",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Admin tetap menangani LPJ agar surplus, defisit, atau sesuai bisa dihitung otomatis."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Admin tetap menangani LPJ agar surplus, defisit, atau sesuai bisa dihitung otomatis.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#64748B"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Admin tetap menangani LPJ agar surplus, defisit, atau sesuai bisa dihitung otomatis.",
+              "fontSize": 17,
+              "color": "#64748B"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/q5o7qpg3",
+      "id": "4",
+      "bbox": [
+        72,
+        188,
+        740,
+        420
+      ],
+      "geometry": "roundRect",
+      "alt": "05-admin-upload-lpj.png",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "imageMask": {
+        "geometry": "roundRect",
+        "adjustmentList": [
+          {
+            "name": "adj",
+            "formula": "val 3810"
+          }
+        ]
+      },
+      "asset": {
+        "assetId": "99c61dea-576b-4248-baa3-4c3bb9ce1699",
+        "contentType": "image/png",
+        "byteLength": 146056
+      }
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yd0z6103",
+      "id": "5",
+      "bbox": [
+        842,
+        188,
+        366,
+        420
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D7E1EA",
+      "lineWidth": 1
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/90je9cvi",
+      "id": "6",
+      "bbox": [
+        874,
+        220,
+        220,
+        30
+      ],
+      "geometry": "rect",
+      "text": "Langkah Upload LPJ",
+      "textPreview": "Langkah Upload LPJ",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#0F766E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Langkah Upload LPJ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Langkah Upload LPJ",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#0F766E",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Langkah Upload LPJ",
+              "fontSize": 24,
+              "color": "#0F766E",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gfmlkjm1",
+      "id": "7",
+      "bbox": [
+        876,
+        273,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r65wjudg",
+      "id": "8",
+      "bbox": [
+        896,
+        266,
+        280,
+        54
+      ],
+      "geometry": "rect",
+      "text": "Cari ID ajuan dengan kotak pencarian agar lebih cepat.",
+      "textPreview": "Cari ID ajuan dengan kotak pencarian agar lebih cepat.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Cari ID ajuan dengan kotak"
+          },
+          {
+            "index": 2,
+            "text": "pencarian agar lebih cepat."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Cari ID ajuan dengan kotak pencarian agar lebih cepat.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Cari ID ajuan dengan kotak pencarian agar lebih cepat.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ylc7u54z",
+      "id": "9",
+      "bbox": [
+        876,
+        321,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g7adsji5",
+      "id": "10",
+      "bbox": [
+        896,
+        314,
+        280,
+        54
+      ],
+      "geometry": "rect",
+      "text": "Isi Total Dana Digunakan sesuai realisasi akhir.",
+      "textPreview": "Isi Total Dana Digunakan sesuai realisasi akhir.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Isi Total Dana Digunakan sesuai"
+          },
+          {
+            "index": 2,
+            "text": "realisasi akhir."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Isi Total Dana Digunakan sesuai realisasi akhir.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Isi Total Dana Digunakan sesuai realisasi akhir.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9s36hcrm",
+      "id": "11",
+      "bbox": [
+        876,
+        369,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y1kre1w7",
+      "id": "12",
+      "bbox": [
+        896,
+        362,
+        280,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Upload file LPJ JPG, PNG, atau PDF maksimal 10 MB.",
+      "textPreview": "Upload file LPJ JPG, PNG, atau PDF maksimal 10 MB.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Upload file LPJ JPG, PNG, atau PDF"
+          },
+          {
+            "index": 2,
+            "text": "maksimal 10 MB."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Upload file LPJ JPG, PNG, atau PDF maksimal 10 MB.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Upload file LPJ JPG, PNG, atau PDF maksimal 10 MB.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rmhk3q5o",
+      "id": "13",
+      "bbox": [
+        876,
+        417,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gfmlkjm1",
+      "id": "14",
+      "bbox": [
+        896,
+        410,
+        280,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Klik Upload LPJ untuk menyimpan file dan realisasi.",
+      "textPreview": "Klik Upload LPJ untuk menyimpan file dan realisasi.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Klik Upload LPJ untuk menyimpan"
+          },
+          {
+            "index": 2,
+            "text": "file dan realisasi."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Klik Upload LPJ untuk menyimpan file dan realisasi.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Klik Upload LPJ untuk menyimpan file dan realisasi.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/90je9cvi",
+      "id": "15",
+      "bbox": [
+        876,
+        465,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yd0z6103",
+      "id": "16",
+      "bbox": [
+        896,
+        458,
+        280,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Dashboard akan menghitung selisih dan status dana otomatis.",
+      "textPreview": "Dashboard akan menghitung selisih dan status dana otomatis.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Dashboard akan menghitung selisih"
+          },
+          {
+            "index": 2,
+            "text": "dan status dana otomatis."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Dashboard akan menghitung selisih dan status dana otomatis.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Dashboard akan menghitung selisih dan status dana otomatis.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rytsvu9k",
+      "id": "17",
+      "bbox": [
+        72,
+        684,
+        420,
+        18
+      ],
+      "geometry": "rect",
+      "text": "Panduan Ajuan Pembayaran • Slide 6",
+      "textPreview": "Panduan Ajuan Pembayaran • Slide 6",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#64748B",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Panduan Ajuan Pembayaran • Slide 6"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Panduan Ajuan Pembayaran • Slide 6",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#64748B",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Panduan Ajuan Pembayaran • Slide 6",
+              "fontSize": 11,
+              "color": "#64748B",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,13 @@
+Sumber deck:
+1. Screenshot web production Ajuan Pembayaran pada 18 Juni 2026.
+2. URL aplikasi: https://ajuan-pembayaran.vercel.app
+3. Kredensial user yang diminta user untuk dicantumkan:
+   - Admin: finance / keuangannf
+   - Dirkeu: dirkeu / direkturkeuangan
+4. Workflow final:
+   - Admin input ajuan
+   - Admin ajukan ke Dirkeu
+   - Dirkeu review
+   - Jika disetujui, ajuan dianggap sudah dibayar
+   - Dirkeu dapat melengkapi bukti TF atau tandai tanpa bukti TF
+   - Admin upload LPJ dan realisasi bila diperlukan

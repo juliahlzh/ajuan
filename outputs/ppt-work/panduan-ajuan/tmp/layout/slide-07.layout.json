@@ -1,0 +1,1040 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/3tv26k",
+    "id": "3tv26k",
+    "slide": 7,
+    "layoutId": "6ac5f4d7-a1b7-444b-873a-447164b1a1ad",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "51db5bac-5793-4fed-822c-da7c6e625fb4",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F7FBFC",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Ajuan Finance Guide",
+    "colors": {
+      "accent1": "#0F766E",
+      "accent2": "#1D4ED8",
+      "accent3": "#F59E0B",
+      "accent4": "#DC2626",
+      "accent5": "#7C3AED",
+      "accent6": "#0891B2",
+      "bg1": "#FFFFFF",
+      "bg2": "#EEF6F7",
+      "tx1": "#14213D",
+      "tx2": "#60708B",
+      "dk1": "#000000",
+      "dk2": "#1E293B",
+      "lt1": "#FFFFFF",
+      "lt2": "#D7E1EA",
+      "hlink": "#1D4ED8",
+      "folHlink": "#7C3AED"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "6ac5f4d7-a1b7-444b-873a-447164b1a1ad",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "51db5bac-5793-4fed-822c-da7c6e625fb4",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "51db5bac-5793-4fed-822c-da7c6e625fb4",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yd0z6103",
+      "id": "1",
+      "bbox": [
+        72,
+        56,
+        520,
+        48
+      ],
+      "geometry": "rect",
+      "text": "6. Bukti TF Bersifat Opsional",
+      "textPreview": "6. Bukti TF Bersifat Opsional",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "fontSize": 30,
+        "typeface": "+mn-lt",
+        "color": "#14213D",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "6. Bukti TF Bersifat Opsional"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "6. Bukti TF Bersifat Opsional",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "color": "#14213D",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "6. Bukti TF Bersifat Opsional",
+              "fontSize": 30,
+              "color": "#14213D",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/90je9cvi",
+      "id": "2",
+      "bbox": [
+        72,
+        104,
+        600,
+        28
+      ],
+      "geometry": "rect",
+      "text": "Sistem sekarang mendukung dua hasil pembayaran yang berbeda.",
+      "textPreview": "Sistem sekarang mendukung dua hasil pembayaran yang berbeda.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#60708B",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Sistem sekarang mendukung dua hasil pembayaran yang berbeda."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Sistem sekarang mendukung dua hasil pembayaran yang berbeda.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#60708B"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Sistem sekarang mendukung dua hasil pembayaran yang berbeda.",
+              "fontSize": 18,
+              "color": "#60708B"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gfmlkjm1",
+      "id": "3",
+      "bbox": [
+        72,
+        170,
+        500,
+        340
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D7E1EA",
+      "lineWidth": 1
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rmhk3q5o",
+      "id": "4",
+      "bbox": [
+        104,
+        206,
+        260,
+        28
+      ],
+      "geometry": "rect",
+      "text": "Opsi 1 • Upload Bukti TF",
+      "textPreview": "Opsi 1 • Upload Bukti TF",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#0F766E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Opsi 1 • Upload Bukti"
+          },
+          {
+            "index": 2,
+            "text": "TF"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Opsi 1 • Upload Bukti TF",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#0F766E",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Opsi 1 • Upload Bukti TF",
+              "fontSize": 24,
+              "color": "#0F766E",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y1kre1w7",
+      "id": "5",
+      "bbox": [
+        106,
+        263,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9s36hcrm",
+      "id": "6",
+      "bbox": [
+        126,
+        256,
+        360,
+        56
+      ],
+      "geometry": "rect",
+      "text": "Gunakan jika pembayaran punya file bukti transfer.",
+      "textPreview": "Gunakan jika pembayaran punya file bukti transfer.",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Gunakan jika pembayaran punya file bukti"
+          },
+          {
+            "index": 2,
+            "text": "transfer."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Gunakan jika pembayaran punya file bukti transfer.",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Gunakan jika pembayaran punya file bukti transfer.",
+              "fontSize": 20,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g7adsji5",
+      "id": "7",
+      "bbox": [
+        106,
+        317,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nih4byhg",
+      "id": "8",
+      "bbox": [
+        126,
+        310,
+        360,
+        56
+      ],
+      "geometry": "rect",
+      "text": "Setelah upload, status menjadi Selesai Dibayar.",
+      "textPreview": "Setelah upload, status menjadi Selesai Dibayar.",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Setelah upload, status menjadi Selesai"
+          },
+          {
+            "index": 2,
+            "text": "Dibayar."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Setelah upload, status menjadi Selesai Dibayar.",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Setelah upload, status menjadi Selesai Dibayar.",
+              "fontSize": 20,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yxobm58z",
+      "id": "9",
+      "bbox": [
+        106,
+        371,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/obm58z25",
+      "id": "10",
+      "bbox": [
+        126,
+        364,
+        360,
+        56
+      ],
+      "geometry": "rect",
+      "text": "Admin bisa klik link bukti dari dashboard Cek Ajuan.",
+      "textPreview": "Admin bisa klik link bukti dari dashboard Cek Ajuan.",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Admin bisa klik link bukti dari dashboard"
+          },
+          {
+            "index": 2,
+            "text": "Cek Ajuan."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Admin bisa klik link bukti dari dashboard Cek Ajuan.",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Admin bisa klik link bukti dari dashboard Cek Ajuan.",
+              "fontSize": 20,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hwfyxobm",
+      "id": "11",
+      "bbox": [
+        620,
+        170,
+        540,
+        340
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D7E1EA",
+      "lineWidth": 1
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/65wjudg7",
+      "id": "12",
+      "bbox": [
+        652,
+        206,
+        240,
+        28
+      ],
+      "geometry": "rect",
+      "text": "Opsi 2 • Tanpa Bukti TF",
+      "textPreview": "Opsi 2 • Tanpa Bukti TF",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#0891B2",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Opsi 2 • Tanpa Bukti"
+          },
+          {
+            "index": 2,
+            "text": "TF"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Opsi 2 • Tanpa Bukti TF",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#0891B2",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Opsi 2 • Tanpa Bukti TF",
+              "fontSize": 24,
+              "color": "#0891B2",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zqtcj6to",
+      "id": "13",
+      "bbox": [
+        654,
+        263,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0891B2",
+      "lineColor": "#0891B2",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/oza1gvy9",
+      "id": "14",
+      "bbox": [
+        674,
+        256,
+        380,
+        72
+      ],
+      "geometry": "rect",
+      "text": "Gunakan jika pembayaran selesai tetapi memang tidak membutuhkan bukti transfer.",
+      "textPreview": "Gunakan jika pembayaran selesai tetapi memang tidak membutuhkan bukti transfer.",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Gunakan jika pembayaran selesai tetapi"
+          },
+          {
+            "index": 2,
+            "text": "memang tidak membutuhkan bukti transfer."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Gunakan jika pembayaran selesai tetapi memang tidak membutuhkan bukti transfer.",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Gunakan jika pembayaran selesai tetapi memang tidak membutuhkan bukti transfer.",
+              "fontSize": 20,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hk3q5o7q",
+      "id": "15",
+      "bbox": [
+        654,
+        317,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0891B2",
+      "lineColor": "#0891B2",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6xkf6dcb",
+      "id": "16",
+      "bbox": [
+        674,
+        310,
+        380,
+        56
+      ],
+      "geometry": "rect",
+      "text": "Klik tombol Tandai Sudah Dibayar pada menu Bukti TF.",
+      "textPreview": "Klik tombol Tandai Sudah Dibayar pada menu Bukti TF.",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Klik tombol Tandai Sudah Dibayar pada"
+          },
+          {
+            "index": 2,
+            "text": "menu Bukti TF."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Klik tombol Tandai Sudah Dibayar pada menu Bukti TF.",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Klik tombol Tandai Sudah Dibayar pada menu Bukti TF.",
+              "fontSize": 20,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zed8v6ps",
+      "id": "17",
+      "bbox": [
+        654,
+        371,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0891B2",
+      "lineColor": "#0891B2",
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/orytsvu9",
+      "id": "18",
+      "bbox": [
+        674,
+        364,
+        380,
+        56
+      ],
+      "geometry": "rect",
+      "text": "Status akhir menjadi Dibayar Tanpa Bukti TF.",
+      "textPreview": "Status akhir menjadi Dibayar Tanpa Bukti TF.",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Status akhir menjadi Dibayar Tanpa Bukti TF."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Status akhir menjadi Dibayar Tanpa Bukti TF.",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Status akhir menjadi Dibayar Tanpa Bukti TF.",
+              "fontSize": 20,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hcrmhk3q",
+      "id": "19",
+      "bbox": [
+        654,
+        425,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0891B2",
+      "lineColor": "#0891B2",
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5gbq1ory",
+      "id": "20",
+      "bbox": [
+        674,
+        418,
+        380,
+        56
+      ],
+      "geometry": "rect",
+      "text": "Status ini tetap terlihat oleh admin di dashboard.",
+      "textPreview": "Status ini tetap terlihat oleh admin di dashboard.",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Status ini tetap terlihat oleh admin di"
+          },
+          {
+            "index": 2,
+            "text": "dashboard."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Status ini tetap terlihat oleh admin di dashboard.",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Status ini tetap terlihat oleh admin di dashboard.",
+              "fontSize": 20,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cvixczed",
+      "id": "21",
+      "bbox": [
+        72,
+        544,
+        1088,
+        74
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EEF7FF",
+      "lineColor": "#C7DEFA",
+      "lineWidth": 1
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nap4r65w",
+      "id": "22",
+      "bbox": [
+        102,
+        568,
+        990,
+        28
+      ],
+      "geometry": "rect",
+      "text": "Tujuan status khusus ini adalah agar user tidak bingung antara pembayaran yang sudah selesai dengan pembayaran yang masih menunggu bukti.",
+      "textPreview": "Tujuan status khusus ini adalah agar user tidak bingung antara pembayaran yang sudah selesai dengan pembayaran yang masih menunggu bukti.",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#1D4ED8",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Tujuan status khusus ini adalah agar user tidak bingung antara pembayaran yang sudah selesai dengan pembayaran"
+          },
+          {
+            "index": 2,
+            "text": "yang masih menunggu bukti."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Tujuan status khusus ini adalah agar user tidak bingung antara pembayaran yang sudah selesai dengan pembayaran yang masih menunggu bukti.",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#1D4ED8",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Tujuan status khusus ini adalah agar user tidak bingung antara pembayaran yang sudah selesai dengan pembayaran yang masih menunggu bukti.",
+              "fontSize": 20,
+              "color": "#1D4ED8",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/upwb2hwf",
+      "id": "23",
+      "bbox": [
+        72,
+        676,
+        360,
+        20
+      ],
+      "geometry": "rect",
+      "text": "Panduan Ajuan Pembayaran • Slide 7",
+      "textPreview": "Panduan Ajuan Pembayaran • Slide 7",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#64748B",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Panduan Ajuan Pembayaran • Slide 7"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Panduan Ajuan Pembayaran • Slide 7",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#64748B",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Panduan Ajuan Pembayaran • Slide 7",
+              "fontSize": 11,
+              "color": "#64748B",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

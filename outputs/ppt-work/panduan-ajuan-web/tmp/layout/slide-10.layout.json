@@ -1,0 +1,731 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/5xtcha",
+    "id": "5xtcha",
+    "slide": 10,
+    "layoutId": "4b5c3251-f062-47b5-8aa6-6cb5620b9cbe",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "1cdfd1f9-dc77-4ed8-9cc3-50bf23e97d84",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F7FBFC",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Ajuan Guide Screenshot",
+    "colors": {
+      "accent1": "#0F766E",
+      "accent2": "#1D4ED8",
+      "accent3": "#F59E0B",
+      "accent4": "#DC2626",
+      "accent5": "#0891B2",
+      "accent6": "#8B5CF6",
+      "bg1": "#FFFFFF",
+      "bg2": "#EEF6F7",
+      "tx1": "#0F172A",
+      "tx2": "#60708B",
+      "dk1": "#000000",
+      "dk2": "#1E293B",
+      "lt1": "#FFFFFF",
+      "lt2": "#D7E1EA",
+      "hlink": "#1D4ED8",
+      "folHlink": "#7C3AED"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "4b5c3251-f062-47b5-8aa6-6cb5620b9cbe",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "1cdfd1f9-dc77-4ed8-9cc3-50bf23e97d84",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "1cdfd1f9-dc77-4ed8-9cc3-50bf23e97d84",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/z61032ls",
+      "id": "1",
+      "bbox": [
+        72,
+        52,
+        320,
+        24
+      ],
+      "geometry": "rect",
+      "text": "BUKTI TF OPSIONAL",
+      "textPreview": "BUKTI TF OPSIONAL",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#0F766E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "BUKTI TF OPSIONAL"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "BUKTI TF OPSIONAL",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#0F766E",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "BUKTI TF OPSIONAL",
+              "fontSize": 12,
+              "color": "#0F766E",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/orytsvu9",
+      "id": "2",
+      "bbox": [
+        72,
+        80,
+        620,
+        54
+      ],
+      "geometry": "rect",
+      "text": "9. Upload Bukti TF atau Tanpa Bukti",
+      "textPreview": "9. Upload Bukti TF atau Tanpa Bukti",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "fontSize": 30,
+        "typeface": "+mn-lt",
+        "color": "#0F172A",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "9. Upload Bukti TF atau Tanpa Bukti"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "9. Upload Bukti TF atau Tanpa Bukti",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "color": "#0F172A",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "9. Upload Bukti TF atau Tanpa Bukti",
+              "fontSize": 30,
+              "color": "#0F172A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hcrmhk3q",
+      "id": "3",
+      "bbox": [
+        72,
+        128,
+        700,
+        34
+      ],
+      "geometry": "rect",
+      "text": "Halaman ini khusus Dirkeu untuk melengkapi pembayaran setelah approve.",
+      "textPreview": "Halaman ini khusus Dirkeu untuk melengkapi pembayaran setelah approve.",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#64748B",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Halaman ini khusus Dirkeu untuk melengkapi pembayaran setelah approve."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Halaman ini khusus Dirkeu untuk melengkapi pembayaran setelah approve.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#64748B"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Halaman ini khusus Dirkeu untuk melengkapi pembayaran setelah approve.",
+              "fontSize": 17,
+              "color": "#64748B"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/ji5snelo",
+      "id": "4",
+      "bbox": [
+        72,
+        178,
+        760,
+        458
+      ],
+      "geometry": "roundRect",
+      "alt": "08-dirkeu-bukti.png",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "imageMask": {
+        "geometry": "roundRect",
+        "adjustmentList": [
+          {
+            "name": "adj",
+            "formula": "val 3493"
+          }
+        ]
+      },
+      "asset": {
+        "assetId": "6af58595-1dd6-4449-aa91-b175c012440a",
+        "contentType": "image/png",
+        "byteLength": 253846
+      }
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zupwb2hw",
+      "id": "5",
+      "bbox": [
+        860,
+        178,
+        348,
+        458
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D7E1EA",
+      "lineWidth": 1
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sfil0rqd",
+      "id": "6",
+      "bbox": [
+        892,
+        210,
+        230,
+        30
+      ],
+      "geometry": "rect",
+      "text": "Pilihan yang Tersedia",
+      "textPreview": "Pilihan yang Tersedia",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#0F766E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Pilihan yang Tersedia"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Pilihan yang Tersedia",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#0F766E",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Pilihan yang Tersedia",
+              "fontSize": 24,
+              "color": "#0F766E",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h0fepkzu",
+      "id": "7",
+      "bbox": [
+        894,
+        265,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/65wjudg7",
+      "id": "8",
+      "bbox": [
+        914,
+        258,
+        280,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Upload Bukti TF bila ada file transfer yang perlu dilampirkan.",
+      "textPreview": "Upload Bukti TF bila ada file transfer yang perlu dilampirkan.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Upload Bukti TF bila ada file"
+          },
+          {
+            "index": 2,
+            "text": "transfer yang perlu dilampirkan."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Upload Bukti TF bila ada file transfer yang perlu dilampirkan.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Upload Bukti TF bila ada file transfer yang perlu dilampirkan.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zqtcj6to",
+      "id": "9",
+      "bbox": [
+        894,
+        313,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zupwb2hw",
+      "id": "10",
+      "bbox": [
+        914,
+        306,
+        280,
+        64
+      ],
+      "geometry": "rect",
+      "text": "Gunakan Tandai Tanpa Bukti TF bila memang tidak ada lampiran.",
+      "textPreview": "Gunakan Tandai Tanpa Bukti TF bila memang tidak ada lampiran.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Gunakan Tandai Tanpa Bukti TF bila"
+          },
+          {
+            "index": 2,
+            "text": "memang tidak ada lampiran."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Gunakan Tandai Tanpa Bukti TF bila memang tidak ada lampiran.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Gunakan Tandai Tanpa Bukti TF bila memang tidak ada lampiran.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a9w3m94f",
+      "id": "11",
+      "bbox": [
+        894,
+        361,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h0fepkzu",
+      "id": "12",
+      "bbox": [
+        914,
+        354,
+        280,
+        68
+      ],
+      "geometry": "rect",
+      "text": "Admin bisa melihat update ini di dashboard Cek Ajuan.",
+      "textPreview": "Admin bisa melihat update ini di dashboard Cek Ajuan.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Admin bisa melihat update ini di"
+          },
+          {
+            "index": 2,
+            "text": "dashboard Cek Ajuan."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Admin bisa melihat update ini di dashboard Cek Ajuan.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Admin bisa melihat update ini di dashboard Cek Ajuan.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sfil0rqd",
+      "id": "13",
+      "bbox": [
+        894,
+        409,
+        10,
+        10
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#0F766E",
+      "lineColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/z61032ls",
+      "id": "14",
+      "bbox": [
+        914,
+        402,
+        280,
+        68
+      ],
+      "geometry": "rect",
+      "text": "Status akhir: Selesai Dibayar atau Dibayar Tanpa Bukti TF.",
+      "textPreview": "Status akhir: Selesai Dibayar atau Dibayar Tanpa Bukti TF.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#334155",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Status akhir: Selesai Dibayar atau"
+          },
+          {
+            "index": 2,
+            "text": "Dibayar Tanpa Bukti TF."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Status akhir: Selesai Dibayar atau Dibayar Tanpa Bukti TF.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#334155"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Status akhir: Selesai Dibayar atau Dibayar Tanpa Bukti TF.",
+              "fontSize": 18,
+              "color": "#334155"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/al87ed8b",
+      "id": "15",
+      "bbox": [
+        72,
+        684,
+        420,
+        18
+      ],
+      "geometry": "rect",
+      "text": "Panduan Ajuan Pembayaran • Slide 10",
+      "textPreview": "Panduan Ajuan Pembayaran • Slide 10",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#64748B",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Panduan Ajuan Pembayaran • Slide 10"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Panduan Ajuan Pembayaran • Slide 10",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#64748B",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Panduan Ajuan Pembayaran • Slide 10",
+              "fontSize": 11,
+              "color": "#64748B",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

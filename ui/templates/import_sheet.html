@@ -1,0 +1,28 @@
+﻿{% extends 'base.html' %}
+{% block content %}
+<section class="card">
+  <h1>Import Data Ajuan (Jan - Mar)</h1>
+  <p class="sub">Upload file <b>CSV</b> atau <b>XLSX</b> untuk input massal data ajuan lama ke rekap.</p>
+
+  {% if error %}<div class="alert alert-error">{{ error }}</div>{% endif %}
+  {% if success %}
+  <div class="alert alert-success">
+    Import selesai. Total: <b>{{ total }}</b>, Data baru: <b>{{ inserted }}</b>, Data update: <b>{{ updated }}</b>{% if years %}, Tahun terdeteksi: <b>{{ years }}</b>{% endif %}.
+  </div>
+  {% endif %}
+
+  <form method="post" enctype="multipart/form-data" class="grid-form">
+    <label class="full">File Import
+      <input type="file" name="file_import" accept=".csv,.xlsx" required>
+    </label>
+    <div class="full actions">
+      <button type="submit">Import Sekarang</button>
+    </div>
+  </form>
+
+  <h2>Header Kolom Minimal</h2>
+  <p class="muted">Wajib ada: <code>tanggal_ajuan,nama_pengaju,divisi_cabang,jenis_ajuan,nominal</code></p>
+  <p class="muted">Kolom opsional: <code>id_ajuan,nomor_memo,perihal,keterangan,status,link_bukti_transfer,link_memo_ajuan,wajib_lpj,tanggal_jatuh_tempo_lpj,status_lpj,link_lpj</code></p>
+  <p class="muted">Didukung juga format file KPI Audit multi-sheet (kolom Tanggal Ajuan, Keterangan, Ajuan) dan format Kegiatan 2026.</p>
+</section>
+{% endblock %}

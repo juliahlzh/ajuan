@@ -1,0 +1,11 @@
+Slide 1: Cover + highlight aplikasi
+Slide 2: Login + akun user
+Slide 3: Menu utama dan peran Admin
+Slide 4: Cara input ajuan Admin
+Slide 5: Cara cek ajuan, filter, edit, export
+Slide 6: Cara upload LPJ dan isi realisasi
+Slide 7: Menu utama dan peran Dirkeu
+Slide 8: Review Dirkeu dan kartu status klik
+Slide 9: Detail ajuan + keputusan Dirkeu
+Slide 10: Bukti transfer opsional + status akhir
+Slide 11: Ringkasan alur dan troubleshooting

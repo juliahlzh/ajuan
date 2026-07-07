@@ -1,0 +1,242 @@
+﻿{% extends 'base.html' %}
+{% block content %}
+<section class="card">
+  <h1>Form Input Ajuan</h1>
+  <p class="sub">Isi data ajuan pembayaran. Bisa upload foto memo ajuan langsung dari form ini.</p>
+
+  {% if error %}<div class="alert alert-error">{{ error }}</div>{% endif %}
+  {% if success %}<div class="alert alert-success">Ajuan berhasil dibuat. ID Ajuan: <b>{{ saved_id }}</b></div>{% endif %}
+
+  <form method="post" enctype="multipart/form-data" class="grid-form">
+    <div class="full mode-switch">
+      <button type="button" id="modeManual" class="mode-btn active">Mode Manual</button>
+      <button type="button" id="modeDetect" class="mode-btn">Mode Deteksi Memo</button>
+      <input type="hidden" name="input_mode" id="input_mode" value="manual">
+    </div>
+
+    <div class="full detect-box">
+      <h2>Deteksi Cepat dari Foto Memo</h2>
+      <p class="muted">Upload foto memo untuk auto isi Nomor Memo, Perihal, Nominal, dan Atas Nama Rekening.</p>
+      <div class="detect-grid">
+        <label>File Memo untuk Deteksi
+          <input type="file" id="file_memo_detect" accept=".jpg,.jpeg,.png,.pdf">
+        </label>
+        <label>Teks OCR (opsional)
+          <textarea id="raw_text_detect" rows="3" placeholder="Kalau OCR foto belum tersedia, bisa paste teks memo di sini."></textarea>
+        </label>
+      </div>
+      <div class="actions">
+        <button type="button" id="btnDetectMemo">Deteksi Otomatis</button>
+      </div>
+      <p id="detectStatus" class="muted"></p>
+      <div id="detectPreview" class="detect-preview" style="display:none;">
+        <h3>Preview Hasil Deteksi</h3>
+        <div class="preview-grid">
+          <div><span>Nomor Memo</span><b id="pvNomorMemo">-</b></div>
+          <div><span>Perihal</span><b id="pvPerihal">-</b></div>
+          <div><span>Nominal</span><b id="pvNominal">-</b></div>
+          <div><span>Nama Penerima</span><b id="pvNamaPenerima">-</b></div>
+        </div>
+        <div class="actions">
+          <button type="button" id="btnApplyDetect">Apply ke Form</button>
+        </div>
+      </div>
+    </div>
+
+    <label>Tanggal Ajuan
+      <input type="date" name="tanggal_ajuan" value="{{ form.tanggal_ajuan or '' }}" required>
+    </label>
+    <label>Nama Pengaju
+      <input type="text" name="nama_pengaju" placeholder="Contoh: Andi" value="{{ form.nama_pengaju or '' }}" required>
+    </label>
+    <label>Atas Nama Rekening (Penerima Dana)
+      <input type="text" name="nama_penerima_dana" placeholder="Contoh: PT ABC / Nama rekening" value="{{ form.nama_penerima_dana or '' }}">
+    </label>
+    <label>Nomor Memo
+      <input type="text" name="nomor_memo" placeholder="Contoh: 204/S.Pm/Div.MCX/SA/II/2026" value="{{ form.nomor_memo or '' }}">
+    </label>
+    <label>Perihal
+      <input type="text" name="perihal" placeholder="Contoh: Pengajuan Revenue Sharing" value="{{ form.perihal or '' }}">
+    </label>
+    <label>Divisi / Cabang
+      <input list="divisi_cabang_list" name="divisi_cabang" placeholder="Pilih dari list atau ketik manual" value="{{ form.divisi_cabang or '' }}" required>
+      <datalist id="divisi_cabang_list">
+        {% for d in divisi_options %}
+        <option value="{{ d }}"></option>
+        {% endfor %}
+      </datalist>
+    </label>
+    <label>Jenis Ajuan
+      <input type="text" name="jenis_ajuan" placeholder="Contoh: Reimburse" value="{{ form.jenis_ajuan or '' }}" required>
+    </label>
+    <label>Nominal
+      <input type="number" min="0" step="0.01" name="nominal" placeholder="0" value="{{ form.nominal or '' }}" required>
+    </label>
+    <label class="full">Keterangan
+      <textarea name="keterangan" rows="3" placeholder="Tambahkan detail ajuan (opsional)">{{ form.keterangan or '' }}</textarea>
+    </label>
+
+    <label>Wajib LPJ
+      <select name="wajib_lpj">
+        <option value="1" {% if (form.wajib_lpj or '1') == '1' %}selected{% endif %}>Ya</option>
+        <option value="0" {% if form.wajib_lpj == '0' %}selected{% endif %}>Tidak</option>
+      </select>
+    </label>
+
+    <label>Set Jatuh Tempo LPJ
+      <select name="lpj_due_option">
+        <option value="30" {% if (form.lpj_due_option or '30') == '30' %}selected{% endif %}>+30 hari</option>
+        <option value="90" {% if form.lpj_due_option == '90' %}selected{% endif %}>+90 hari</option>
+        <option value="365" {% if form.lpj_due_option == '365' %}selected{% endif %}>+1 tahun</option>
+      </select>
+    </label>
+
+    <label>Tanggal Jatuh Tempo LPJ (manual, opsional)
+      <input type="date" name="tanggal_jatuh_tempo_lpj_manual" value="{{ form.tanggal_jatuh_tempo_lpj_manual or '' }}">
+    </label>
+    <label>Status LPJ
+      <input type="text" value="Belum Upload / Tidak Wajib (otomatis)" disabled>
+    </label>
+
+    <label>Upload Foto Memo Ajuan (opsional)
+      <input type="file" name="file_memo" accept=".jpg,.jpeg,.png,.pdf">
+    </label>
+    <label class="full">
+      <input type="checkbox" name="force_save" value="1">
+      Tetap simpan meskipun terdeteksi kemungkinan duplikat
+    </label>
+
+    <div class="full actions">
+      <button type="submit">Simpan Ajuan</button>
+    </div>
+  </form>
+
+  {% if duplicate_candidates %}
+  <div class="mt16">
+    <h2>Kemungkinan Duplikat</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Tanggal</th>
+            <th>Atas Nama Rekening</th>
+            <th>Nominal</th>
+            <th>Divisi/Cabang</th>
+            <th>Jenis</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for d in duplicate_candidates %}
+          <tr>
+            <td>{{ d.id_ajuan }}</td>
+            <td>{{ d.tanggal_ajuan }}</td>
+            <td>{{ d.nama_penerima_dana or '-' }}</td>
+            <td>Rp {{ '{:,.0f}'.format(d.nominal) }}</td>
+            <td>{{ d.divisi_cabang }}</td>
+            <td>{{ d.jenis_ajuan }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  {% endif %}
+</section>
+<script>
+(() => {
+  const modeManual = document.getElementById("modeManual");
+  const modeDetect = document.getElementById("modeDetect");
+  const inputMode = document.getElementById("input_mode");
+  const detectBox = document.querySelector(".detect-box");
+  const detectBtn = document.getElementById("btnDetectMemo");
+  const applyBtn = document.getElementById("btnApplyDetect");
+  const detectStatus = document.getElementById("detectStatus");
+  const detectFile = document.getElementById("file_memo_detect");
+  const detectText = document.getElementById("raw_text_detect");
+  const detectPreview = document.getElementById("detectPreview");
+  let lastDetectedFields = {};
+
+  function setValue(name, value) {
+    if (!value) return;
+    const el = document.querySelector(`[name="${name}"]`);
+    if (el) el.value = value;
+  }
+
+  function setMode(mode) {
+    inputMode.value = mode;
+    if (mode === "detect") {
+      detectBox.style.display = "block";
+      modeDetect.classList.add("active");
+      modeManual.classList.remove("active");
+    } else {
+      detectBox.style.display = "none";
+      modeManual.classList.add("active");
+      modeDetect.classList.remove("active");
+    }
+  }
+
+  function fillPreview(fields) {
+    document.getElementById("pvNomorMemo").textContent = fields.nomor_memo || "-";
+    document.getElementById("pvPerihal").textContent = fields.perihal || "-";
+    document.getElementById("pvNominal").textContent = fields.nominal || "-";
+    document.getElementById("pvNamaPenerima").textContent = fields.nama_penerima_dana || "-";
+    detectPreview.style.display = "block";
+  }
+
+  async function runDetect() {
+    detectStatus.textContent = "Mendeteksi isi memo...";
+    const fd = new FormData();
+    if (detectFile.files && detectFile.files[0]) {
+      fd.append("file_memo_detect", detectFile.files[0]);
+    }
+    if (detectText.value.trim()) {
+      fd.append("raw_text", detectText.value.trim());
+    }
+
+    if (!fd.has("file_memo_detect") && !fd.has("raw_text")) {
+      detectStatus.textContent = "Pilih file memo atau isi teks OCR terlebih dahulu.";
+      return;
+    }
+
+    try {
+      const res = await fetch("{{ url_for('api_detect_memo') }}", {
+        method: "POST",
+        body: fd,
+      });
+      const data = await res.json();
+      if (!data.ok) {
+        detectStatus.textContent = data.message || "Deteksi gagal.";
+        return;
+      }
+
+      lastDetectedFields = data.fields || {};
+      fillPreview(lastDetectedFields);
+      detectStatus.textContent = "Deteksi selesai. Klik 'Apply ke Form' untuk isi otomatis.";
+    } catch (err) {
+      detectStatus.textContent = "Terjadi error saat deteksi memo.";
+    }
+  }
+
+  function applyDetected() {
+    if (!lastDetectedFields || Object.keys(lastDetectedFields).length === 0) return;
+    setValue("nomor_memo", lastDetectedFields.nomor_memo || "");
+    setValue("perihal", lastDetectedFields.perihal || "");
+    setValue("nominal", lastDetectedFields.nominal || "");
+    setValue("nama_penerima_dana", lastDetectedFields.nama_penerima_dana || "");
+    detectStatus.textContent = "Field hasil deteksi sudah diterapkan ke form.";
+  }
+
+  modeManual.addEventListener("click", () => setMode("manual"));
+  modeDetect.addEventListener("click", () => setMode("detect"));
+  if (detectBtn) {
+    detectBtn.addEventListener("click", runDetect);
+  }
+  if (applyBtn) {
+    applyBtn.addEventListener("click", applyDetected);
+  }
+
+  setMode("manual");
+})();
+</script>
+{% endblock %}

@@ -1,0 +1,67 @@
+﻿{% extends 'base.html' %}
+{% block content %}
+<section class="card">
+  <h1>Upload LPJ</h1>
+  <p class="sub">Pilih ID ajuan yang wajib LPJ, lalu upload file LPJ (jpg/png/pdf).</p>
+
+  {% if error %}<div class="alert alert-error">{{ error }}</div>{% endif %}
+  {% if success %}
+    <div class="alert alert-success">
+      Upload LPJ berhasil untuk <b>{{ uploaded_id }}</b>.
+      <a href="{{ link_lpj }}" target="_blank">Lihat LPJ</a>
+    </div>
+  {% endif %}
+
+  <form method="post" enctype="multipart/form-data" class="grid-form">
+    <label>ID Ajuan (wajib LPJ)
+      <select name="id_ajuan" required>
+        <option value="">-- pilih ID ajuan --</option>
+        {% for item in pending_lpj %}
+          <option value="{{ item.id_ajuan }}">{{ item.id_ajuan }} | {{ item.nama_pengaju }} | Jatuh Tempo: {{ item.tanggal_jatuh_tempo_lpj or '-' }}</option>
+        {% endfor %}
+      </select>
+    </label>
+
+    <label>Upload File LPJ
+      <input type="file" name="file_lpj" accept=".jpg,.jpeg,.png,.pdf" required>
+    </label>
+    <label>Total Dana Digunakan (Realisasi)
+      <input type="number" min="0" step="0.01" name="nominal_realisasi" placeholder="Contoh: 1250000">
+    </label>
+
+    <div class="full actions">
+      <button type="submit">Upload LPJ</button>
+    </div>
+  </form>
+
+  <h2>Daftar LPJ Belum Upload</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tanggal Ajuan</th>
+          <th>Nama</th>
+          <th>Divisi / Cabang</th>
+          <th>Jatuh Tempo LPJ</th>
+          <th>Status LPJ</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in pending_lpj %}
+          <tr>
+            <td>{{ item.id_ajuan }}</td>
+            <td>{{ item.tanggal_ajuan }}</td>
+            <td>{{ item.nama_pengaju }}</td>
+            <td>{{ item.divisi_cabang }}</td>
+            <td>{{ item.tanggal_jatuh_tempo_lpj or '-' }}</td>
+            <td><span class="badge pending">{{ item.status_lpj }}</span></td>
+          </tr>
+        {% else %}
+          <tr><td colspan="6">Tidak ada LPJ yang menunggu upload.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}
