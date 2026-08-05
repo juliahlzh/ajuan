@@ -1,10 +1,11 @@
 import Link from 'next/link';
-import { CheckCircle2, Clock3, Search, XCircle } from 'lucide-react';
+import { CheckCircle2, Clock3, Files, Search, XCircle } from 'lucide-react';
 import { requireRole } from '@/lib/auth';
 import { getDirkeuNotificationSummary, getReviewDashboardSummary, listAjuan, listDivisi, listYears } from '@/lib/ajuan';
 import { StatusBadge } from '@/components/StatusBadge';
 import { StatCard } from '@/components/StatCard';
 import { formatDate, formatRupiah } from '@/lib/format';
+import { DIRKEU_ALL_ADMIN_DATA, getDirkeuRecordKind, isDirkeuApprovalRequired } from '@/lib/dirkeu-view';
 
 export const dynamic = 'force-dynamic';
 
@@ -36,7 +37,9 @@ export default async function ReviewDirkeuPage({ searchParams }: { searchParams:
   const [activeSummary, archivedSummary, rows, years, divisi] = await Promise.all([
     getReviewDashboardSummary({ ...filters, archived: '0' }),
     getReviewDashboardSummary({ ...filters, archived: '1' }),
-    statusReview === 'Arsip'
+    statusReview === DIRKEU_ALL_ADMIN_DATA
+      ? listAjuan(filters)
+      : statusReview === 'Arsip'
       ? listAjuan({ ...filters, archived: '1' })
       : listAjuan({ ...filters, archived: '0', review_status_dirkeu: statusReview }),
     listYears(),
@@ -45,10 +48,12 @@ export default async function ReviewDirkeuPage({ searchParams }: { searchParams:
   const notificationSummary = await getDirkeuNotificationSummary();
 
   const totalRows = rows.length;
+  const totalAdminRows = activeSummary.total + archivedSummary.total;
   const totalPages = Math.max(1, Math.ceil(totalRows / pageSize));
   const currentPage = Math.min(requestedPage, totalPages);
   const activeRows = rows.slice((currentPage - 1) * pageSize, currentPage * pageSize);
   const activeTitleMap = {
+    [DIRKEU_ALL_ADMIN_DATA]: 'Seluruh Data yang Diinput Admin',
     'Menunggu Review Dirkeu': 'Daftar Menunggu Review',
     'Perlu Revisi': 'Daftar Ajuan Perlu Revisi',
     'Ditolak Dirkeu': 'Daftar Ajuan Ditolak',
@@ -57,6 +62,7 @@ export default async function ReviewDirkeuPage({ searchParams }: { searchParams:
   } as const;
 
   const activeNoteMap = {
+    [DIRKEU_ALL_ADMIN_DATA]: 'Menampilkan seluruh data aktif dan arsip. Label pada setiap baris membedakan antrean approval dari riwayat input Admin.',
     'Menunggu Review Dirkeu': 'Hanya ajuan yang sudah diajukan admin dan belum diputuskan yang tampil di sini.',
     'Perlu Revisi': 'Daftar ini membantu Dirkeu mengecek ajuan yang sudah dikembalikan untuk perbaikan.',
     'Ditolak Dirkeu': 'Daftar ini menampilkan ajuan yang sudah ditutup oleh Dirkeu.',
@@ -133,7 +139,8 @@ export default async function ReviewDirkeuPage({ searchParams }: { searchParams:
         </div>
       ) : null}
 
-      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <StatCard label="Semua Input Admin" value={String(totalAdminRows)} note="Data aktif dan arsip dalam satu daftar" icon={Files} href={buildStatusHref(DIRKEU_ALL_ADMIN_DATA)} active={statusReview === DIRKEU_ALL_ADMIN_DATA} />
         <StatCard label="Menunggu Review" value={String(activeSummary.pending)} note="Perlu keputusan hari ini" icon={Clock3} href={buildStatusHref('Menunggu Review Dirkeu')} active={statusReview === 'Menunggu Review Dirkeu'} />
         <StatCard label="Perlu Revisi" value={String(activeSummary.revision)} note="Kembalikan dengan catatan jelas" icon={Clock3} href={buildStatusHref('Perlu Revisi')} active={statusReview === 'Perlu Revisi'} />
         <StatCard label="Ditolak" value={String(activeSummary.rejected)} note="Sudah ditutup oleh Dirkeu" icon={XCircle} href={buildStatusHref('Ditolak Dirkeu')} active={statusReview === 'Ditolak Dirkeu'} />
@@ -171,6 +178,7 @@ export default async function ReviewDirkeuPage({ searchParams }: { searchParams:
           <label>
             <span className="label">Data</span>
             <select className="field" name="status_review" defaultValue={statusReview}>
+              <option value={DIRKEU_ALL_ADMIN_DATA}>Semua Input Admin</option>
               <option value="Menunggu Review Dirkeu">Menunggu Review</option>
               <option value="Perlu Revisi">Perlu Revisi</option>
               <option value="Ditolak Dirkeu">Ditolak</option>
@@ -202,6 +210,23 @@ export default async function ReviewDirkeuPage({ searchParams }: { searchParams:
           {activeRows.map((row, index) => (
             <div key={row.id_ajuan} className={`flex flex-col gap-4 px-5 py-5 md:flex-row md:items-start md:justify-between ${index % 2 === 0 ? 'bg-white' : 'bg-slate-50/40'}`}>
               <div className="space-y-2">
+                {statusReview === DIRKEU_ALL_ADMIN_DATA ? (
+                  <span
+                    className={`inline-flex items-center rounded-full px-3 py-1 text-[11px] font-black ring-1 ${
+                      getDirkeuRecordKind(row) === 'approval_required'
+                        ? 'bg-amber-100 text-amber-900 ring-amber-200'
+                        : getDirkeuRecordKind(row) === 'admin_archive'
+                          ? 'bg-slate-200 text-slate-800 ring-slate-300'
+                          : 'bg-blue-100 text-blue-900 ring-blue-200'
+                    }`}
+                  >
+                    {getDirkeuRecordKind(row) === 'approval_required'
+                      ? 'Perlu Approval Dirkeu'
+                      : getDirkeuRecordKind(row) === 'admin_archive'
+                        ? 'Arsip Admin'
+                        : 'Riwayat Input Admin'}
+                  </span>
+                ) : null}
                 <p className="text-lg font-black text-slate-950">{row.id_ajuan}</p>
                 <p className="text-sm font-semibold text-slate-500">{formatDate(row.tanggal_ajuan)} | {row.divisi_cabang}</p>
                 <p className="text-sm font-semibold text-slate-800">{row.perihal || row.keterangan || '-'}</p>
@@ -215,12 +240,13 @@ export default async function ReviewDirkeuPage({ searchParams }: { searchParams:
               </div>
               <div className="flex shrink-0 flex-col items-start gap-3 md:items-end">
                 <p className="text-lg font-black text-slate-950">{formatRupiah(row.nominal)}</p>
-                <Link className="btn-primary" href={`/review-dirkeu/${row.id_ajuan}`}>{statusReview === 'Menunggu Review Dirkeu' ? 'Buka Detail Review' : 'Lihat Detail'}</Link>
+                <Link className="btn-primary" href={`/review-dirkeu/${row.id_ajuan}`}>{isDirkeuApprovalRequired(row) ? 'Buka Detail Review' : 'Lihat Detail'}</Link>
               </div>
             </div>
           ))}
           {!activeRows.length ? (
             <div className="px-5 py-12 text-center text-sm font-bold text-slate-500">
+              {statusReview === DIRKEU_ALL_ADMIN_DATA && 'Belum ada data Admin untuk filter ini.'}
               {statusReview === 'Menunggu Review Dirkeu' && 'Tidak ada ajuan yang sedang menunggu review Dirkeu.'}
               {statusReview === 'Perlu Revisi' && 'Belum ada ajuan dengan status perlu revisi.'}
               {statusReview === 'Ditolak Dirkeu' && 'Belum ada ajuan yang ditolak Dirkeu.'}

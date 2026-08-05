@@ -18,6 +18,7 @@ Aplikasi operasional untuk input ajuan pembayaran, upload bukti transfer, upload
 - Upload LPJ dengan input realisasi.
 - Hitung otomatis selisih dana dan status `Surplus`, `Defisit`, atau `Sesuai`.
 - Dashboard cek ajuan berisi KPI cards, breakdown status, tren bulanan, top cabang, filter, dan tabel.
+- Dashboard Dirkeu memisahkan antrean yang perlu approval dari daftar seluruh input Admin, termasuk riwayat dan arsip.
 - Edit dan hapus ajuan dengan konfirmasi.
 - Audit trail perubahan.
 - Import Excel/CSV, termasuk sheet `Kegiatan` dan layout KPI lama.
@@ -118,6 +119,8 @@ npm run import:json -- D:\path\migration-export-ajuan.json
 ```
 
 ## Deploy ke Vercel
+
+Production: <https://ajuan-pembayaran.vercel.app>
 
 1. Buat database PostgreSQL, misalnya Supabase atau Neon.
 2. Buat Vercel Blob store dan ambil `BLOB_READ_WRITE_TOKEN`.
