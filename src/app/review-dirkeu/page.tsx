@@ -177,7 +177,7 @@ export default async function ReviewDirkeuPage({ searchParams }: { searchParams:
           </label>
           <label>
             <span className="label">Data</span>
-            <select className="field" name="status_review" defaultValue={statusReview}>
+            <select key={statusReview} className="field" name="status_review" defaultValue={statusReview}>
               <option value={DIRKEU_ALL_ADMIN_DATA}>Semua Input Admin</option>
               <option value="Menunggu Review Dirkeu">Menunggu Review</option>
               <option value="Perlu Revisi">Perlu Revisi</option>
