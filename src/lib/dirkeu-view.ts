@@ -3,6 +3,7 @@ import type { Ajuan } from './types';
 export const DIRKEU_ALL_ADMIN_DATA = 'Semua Data Admin' as const;
 
 type DirkeuRowState = Pick<Ajuan, 'approval_stage' | 'review_status_dirkeu' | 'is_archived'>;
+type DirkeuLpjState = Pick<Ajuan, 'wajib_lpj' | 'status_lpj'>;
 
 export type DirkeuRecordKind = 'approval_required' | 'admin_history' | 'admin_archive';
 
@@ -32,4 +33,10 @@ export function getDirkeuRecordKind(row: DirkeuRowState): DirkeuRecordKind {
   if (row.is_archived) return 'admin_archive';
   if (isDirkeuApprovalRequired(row)) return 'approval_required';
   return 'admin_history';
+}
+
+export function getDirkeuLpjLabel(row: DirkeuLpjState) {
+  if (!row.wajib_lpj || row.status_lpj === 'Tidak Wajib') return 'LPJ Tidak Wajib';
+  if (row.status_lpj === 'Sudah Upload') return 'Sudah LPJ';
+  return 'Belum LPJ';
 }

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { combineDirkeuFinancialSummary, getDirkeuRecordKind, isDirkeuApprovalRequired } from './dirkeu-view';
+import { combineDirkeuFinancialSummary, getDirkeuLpjLabel, getDirkeuRecordKind, isDirkeuApprovalRequired } from './dirkeu-view';
 
 describe('tampilan data Dirkeu', () => {
   it('menandai hanya ajuan submitted aktif sebagai antrean approval', () => {
@@ -53,5 +53,11 @@ describe('tampilan data Dirkeu', () => {
       nominalTotal: 120_000,
       realisasiTotal: 98_000
     });
+  });
+
+  it('memberi keterangan LPJ yang mudah dibaca Dirkeu', () => {
+    expect(getDirkeuLpjLabel({ wajib_lpj: true, status_lpj: 'Sudah Upload' })).toBe('Sudah LPJ');
+    expect(getDirkeuLpjLabel({ wajib_lpj: true, status_lpj: 'Belum Upload' })).toBe('Belum LPJ');
+    expect(getDirkeuLpjLabel({ wajib_lpj: false, status_lpj: 'Tidak Wajib' })).toBe('LPJ Tidak Wajib');
   });
 });

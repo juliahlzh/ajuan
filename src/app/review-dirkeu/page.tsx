@@ -6,7 +6,7 @@ import { getDirkeuNotificationSummary, getReviewDashboardSummary, listAjuan, lis
 import { StatusBadge } from '@/components/StatusBadge';
 import { StatCard } from '@/components/StatCard';
 import { compactNumber, formatDate, formatRupiah } from '@/lib/format';
-import { combineDirkeuFinancialSummary, DIRKEU_ALL_ADMIN_DATA, getDirkeuRecordKind, isDirkeuApprovalRequired } from '@/lib/dirkeu-view';
+import { combineDirkeuFinancialSummary, DIRKEU_ALL_ADMIN_DATA, getDirkeuLpjLabel, getDirkeuRecordKind, isDirkeuApprovalRequired } from '@/lib/dirkeu-view';
 
 export const dynamic = 'force-dynamic';
 
@@ -222,12 +222,20 @@ export default async function ReviewDirkeuPage({ searchParams }: { searchParams:
       </section>
 
       <section className="table-shell overflow-hidden">
-        <div className="border-b border-slate-100 px-5 py-4">
-          <h2 className="section-title">{activeTitleMap[statusReview as keyof typeof activeTitleMap] ?? 'Daftar Review Dirkeu'}</h2>
-          <p className="section-note">{activeNoteMap[statusReview as keyof typeof activeNoteMap] ?? 'Daftar review Dirkeu.'}</p>
+        <div className="flex flex-col gap-4 border-b border-slate-100 px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 className="section-title">{activeTitleMap[statusReview as keyof typeof activeTitleMap] ?? 'Daftar Review Dirkeu'}</h2>
+            <p className="section-note">{activeNoteMap[statusReview as keyof typeof activeNoteMap] ?? 'Daftar review Dirkeu.'}</p>
+          </div>
+          <div className="flex shrink-0 items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3">
+            <span className="text-xs font-black uppercase tracking-[0.14em] text-slate-500">Total Ajuan</span>
+            <span className="text-xl font-black text-slate-950">{compactNumber(totalRows)}</span>
+          </div>
         </div>
         <div className="divide-y divide-slate-100">
-          {activeRows.map((row, index) => (
+          {activeRows.map((row, index) => {
+            const lpjLabel = getDirkeuLpjLabel(row);
+            return (
             <div key={row.id_ajuan} className={`flex flex-col gap-4 px-5 py-5 md:flex-row md:items-start md:justify-between ${index % 2 === 0 ? 'bg-white' : 'bg-slate-50/40'}`}>
               <div className="space-y-2">
                 {statusReview === DIRKEU_ALL_ADMIN_DATA ? (
@@ -256,14 +264,35 @@ export default async function ReviewDirkeuPage({ searchParams }: { searchParams:
                 <div className="flex flex-wrap gap-2">
                   <StatusBadge value={row.review_status_dirkeu} type="review" />
                   <StatusBadge value={row.status} />
+                  <span
+                    className={`inline-flex items-center rounded-full px-3 py-1 text-[11px] font-black ring-1 ${
+                      lpjLabel === 'Sudah LPJ'
+                        ? 'bg-emerald-100 text-emerald-800 ring-emerald-200'
+                        : lpjLabel === 'LPJ Tidak Wajib'
+                          ? 'bg-zinc-100 text-zinc-700 ring-zinc-200'
+                          : 'bg-amber-100 text-amber-800 ring-amber-200'
+                    }`}
+                  >
+                    {lpjLabel}
+                  </span>
                 </div>
               </div>
               <div className="flex shrink-0 flex-col items-start gap-3 md:items-end">
-                <p className="text-lg font-black text-slate-950">{formatRupiah(row.nominal)}</p>
+                <div className="md:text-right">
+                  <p className="text-[11px] font-black uppercase tracking-[0.14em] text-slate-500">Nominal Ajuan</p>
+                  <p className="mt-1 text-lg font-black text-slate-950">{formatRupiah(row.nominal)}</p>
+                </div>
+                <div className="md:text-right">
+                  <p className="text-[11px] font-black uppercase tracking-[0.14em] text-slate-500">Nominal Realisasi</p>
+                  <p className="mt-1 text-sm font-black text-slate-800">
+                    {row.nominal_realisasi === null ? 'Belum diisi' : formatRupiah(row.nominal_realisasi)}
+                  </p>
+                </div>
                 <Link className="btn-primary" href={`/review-dirkeu/${row.id_ajuan}`}>{isDirkeuApprovalRequired(row) ? 'Buka Detail Review' : 'Lihat Detail'}</Link>
               </div>
             </div>
-          ))}
+            );
+          })}
           {!activeRows.length ? (
             <div className="px-5 py-12 text-center text-sm font-bold text-slate-500">
               {statusReview === DIRKEU_ALL_ADMIN_DATA && 'Belum ada data Admin untuk filter ini.'}
