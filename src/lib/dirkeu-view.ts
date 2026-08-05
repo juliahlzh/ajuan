@@ -6,6 +6,24 @@ type DirkeuRowState = Pick<Ajuan, 'approval_stage' | 'review_status_dirkeu' | 'i
 
 export type DirkeuRecordKind = 'approval_required' | 'admin_history' | 'admin_archive';
 
+type DirkeuFinancialSlice = {
+  total: number;
+  lpjUploaded: number;
+  realisasiCount: number;
+  nominalTotal: number;
+  realisasiTotal: number;
+};
+
+export function combineDirkeuFinancialSummary(active: DirkeuFinancialSlice, archived: DirkeuFinancialSlice) {
+  return {
+    totalAjuan: active.total + archived.total,
+    lpjUploaded: active.lpjUploaded + archived.lpjUploaded,
+    realisasiCount: active.realisasiCount + archived.realisasiCount,
+    nominalTotal: active.nominalTotal + archived.nominalTotal,
+    realisasiTotal: active.realisasiTotal + archived.realisasiTotal
+  };
+}
+
 export function isDirkeuApprovalRequired(row: DirkeuRowState) {
   return !row.is_archived && row.approval_stage === 'submitted' && row.review_status_dirkeu === 'Menunggu Review Dirkeu';
 }

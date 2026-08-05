@@ -1,11 +1,12 @@
+/* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V4 */
 import Link from 'next/link';
-import { CheckCircle2, Clock3, Files, Search, XCircle } from 'lucide-react';
+import { BarChart3, CheckCircle2, CircleDollarSign, Clock3, Files, ReceiptText, Search, XCircle } from 'lucide-react';
 import { requireRole } from '@/lib/auth';
 import { getDirkeuNotificationSummary, getReviewDashboardSummary, listAjuan, listDivisi, listYears } from '@/lib/ajuan';
 import { StatusBadge } from '@/components/StatusBadge';
 import { StatCard } from '@/components/StatCard';
-import { formatDate, formatRupiah } from '@/lib/format';
-import { DIRKEU_ALL_ADMIN_DATA, getDirkeuRecordKind, isDirkeuApprovalRequired } from '@/lib/dirkeu-view';
+import { compactNumber, formatDate, formatRupiah } from '@/lib/format';
+import { combineDirkeuFinancialSummary, DIRKEU_ALL_ADMIN_DATA, getDirkeuRecordKind, isDirkeuApprovalRequired } from '@/lib/dirkeu-view';
 
 export const dynamic = 'force-dynamic';
 
@@ -48,7 +49,8 @@ export default async function ReviewDirkeuPage({ searchParams }: { searchParams:
   const notificationSummary = await getDirkeuNotificationSummary();
 
   const totalRows = rows.length;
-  const totalAdminRows = activeSummary.total + archivedSummary.total;
+  const financialSummary = combineDirkeuFinancialSummary(activeSummary, archivedSummary);
+  const totalAdminRows = financialSummary.totalAjuan;
   const totalPages = Math.max(1, Math.ceil(totalRows / pageSize));
   const currentPage = Math.min(requestedPage, totalPages);
   const activeRows = rows.slice((currentPage - 1) * pageSize, currentPage * pageSize);
@@ -139,13 +141,31 @@ export default async function ReviewDirkeuPage({ searchParams }: { searchParams:
         </div>
       ) : null}
 
-      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-        <StatCard label="Semua Input Admin" value={String(totalAdminRows)} note="Data aktif dan arsip dalam satu daftar" icon={Files} href={buildStatusHref(DIRKEU_ALL_ADMIN_DATA)} active={statusReview === DIRKEU_ALL_ADMIN_DATA} />
-        <StatCard label="Menunggu Review" value={String(activeSummary.pending)} note="Perlu keputusan hari ini" icon={Clock3} href={buildStatusHref('Menunggu Review Dirkeu')} active={statusReview === 'Menunggu Review Dirkeu'} />
-        <StatCard label="Perlu Revisi" value={String(activeSummary.revision)} note="Kembalikan dengan catatan jelas" icon={Clock3} href={buildStatusHref('Perlu Revisi')} active={statusReview === 'Perlu Revisi'} />
-        <StatCard label="Ditolak" value={String(activeSummary.rejected)} note="Sudah ditutup oleh Dirkeu" icon={XCircle} href={buildStatusHref('Ditolak Dirkeu')} active={statusReview === 'Ditolak Dirkeu'} />
-        <StatCard label="Disetujui" value={String(activeSummary.approved)} note="Otomatis tercatat sudah dibayar" icon={CheckCircle2} href={buildStatusHref('Disetujui Dirkeu')} active={statusReview === 'Disetujui Dirkeu'} />
-        <StatCard label="Arsip Admin" value={String(archivedSummary.total)} note="Data lama tetap bisa dicari" icon={Search} href={buildStatusHref('Arsip')} active={statusReview === 'Arsip'} />
+      <section className="space-y-4">
+        <div>
+          <h2 className="section-title">Ringkasan Keuangan Keseluruhan</h2>
+          <p className="section-note">Mencakup data aktif dan arsip sesuai filter yang sedang digunakan.</p>
+        </div>
+        <div className="grid gap-4 md:grid-cols-3">
+          <StatCard label="Total Seluruh Ajuan" value={compactNumber(financialSummary.totalAjuan)} note={`${formatRupiah(financialSummary.nominalTotal)} total nominal`} icon={BarChart3} />
+          <StatCard label="LPJ Terunggah" value={compactNumber(financialSummary.lpjUploaded)} note={`${financialSummary.lpjUploaded} dari ${financialSummary.totalAjuan} ajuan`} icon={ReceiptText} />
+          <StatCard label="Total Realisasi" value={formatRupiah(financialSummary.realisasiTotal)} note={`${financialSummary.realisasiCount} ajuan sudah mengisi realisasi`} icon={CircleDollarSign} />
+        </div>
+      </section>
+
+      <section className="space-y-4">
+        <div>
+          <h2 className="section-title">Status dan Antrean Approval</h2>
+          <p className="section-note">Pisahkan pekerjaan yang perlu keputusan dari riwayat input Admin.</p>
+        </div>
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          <StatCard label="Semua Input Admin" value={String(totalAdminRows)} note="Data aktif dan arsip dalam satu daftar" icon={Files} href={buildStatusHref(DIRKEU_ALL_ADMIN_DATA)} active={statusReview === DIRKEU_ALL_ADMIN_DATA} />
+          <StatCard label="Menunggu Review" value={String(activeSummary.pending)} note="Perlu keputusan hari ini" icon={Clock3} href={buildStatusHref('Menunggu Review Dirkeu')} active={statusReview === 'Menunggu Review Dirkeu'} />
+          <StatCard label="Perlu Revisi" value={String(activeSummary.revision)} note="Kembalikan dengan catatan jelas" icon={Clock3} href={buildStatusHref('Perlu Revisi')} active={statusReview === 'Perlu Revisi'} />
+          <StatCard label="Ditolak" value={String(activeSummary.rejected)} note="Sudah ditutup oleh Dirkeu" icon={XCircle} href={buildStatusHref('Ditolak Dirkeu')} active={statusReview === 'Ditolak Dirkeu'} />
+          <StatCard label="Disetujui" value={String(activeSummary.approved)} note="Otomatis tercatat sudah dibayar" icon={CheckCircle2} href={buildStatusHref('Disetujui Dirkeu')} active={statusReview === 'Disetujui Dirkeu'} />
+          <StatCard label="Arsip Admin" value={String(archivedSummary.total)} note="Data lama tetap bisa dicari" icon={Search} href={buildStatusHref('Arsip')} active={statusReview === 'Arsip'} />
+        </div>
       </section>
 
       <section className="toolbar-card">

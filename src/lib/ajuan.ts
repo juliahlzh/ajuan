@@ -347,7 +347,10 @@ export async function getReviewDashboardSummary(filters: AjuanFilters = {}) {
         rejected: number;
         approved: number;
         archived: number;
+        lpj_uploaded: number;
+        realisasi_count: number;
         nominal_total: string | number | null;
+        realisasi_total: string | number | null;
       }[]
     >`
       SELECT
@@ -357,7 +360,10 @@ export async function getReviewDashboardSummary(filters: AjuanFilters = {}) {
         COUNT(*) FILTER (WHERE review_status_dirkeu = 'Ditolak Dirkeu')::int AS rejected,
         COUNT(*) FILTER (WHERE review_status_dirkeu = 'Disetujui Dirkeu')::int AS approved,
         COUNT(*) FILTER (WHERE is_archived = TRUE)::int AS archived,
-        COALESCE(SUM(nominal), 0) AS nominal_total
+        COUNT(*) FILTER (WHERE status_lpj = 'Sudah Upload')::int AS lpj_uploaded,
+        COUNT(*) FILTER (WHERE nominal_realisasi IS NOT NULL)::int AS realisasi_count,
+        COALESCE(SUM(nominal), 0) AS nominal_total,
+        COALESCE(SUM(nominal_realisasi), 0) AS realisasi_total
       FROM ajuan
       WHERE (${fragments.keyword || null}::text IS NULL
         OR id_ajuan ILIKE ${`%${fragments.keyword}%`}
@@ -373,7 +379,18 @@ export async function getReviewDashboardSummary(filters: AjuanFilters = {}) {
         AND (${fragments.tanggalAkhir || null}::date IS NULL OR tanggal_ajuan <= ${fragments.tanggalAkhir || null})
         AND (${fragments.archivedFlag}::boolean IS NULL OR is_archived = ${fragments.archivedFlag})
     `;
-    const row = rows[0] || { total: 0, pending: 0, revision: 0, rejected: 0, approved: 0, archived: 0, nominal_total: 0 };
+    const row = rows[0] || {
+      total: 0,
+      pending: 0,
+      revision: 0,
+      rejected: 0,
+      approved: 0,
+      archived: 0,
+      lpj_uploaded: 0,
+      realisasi_count: 0,
+      nominal_total: 0,
+      realisasi_total: 0
+    };
     return {
       total: Number(row.total || 0),
       pending: Number(row.pending || 0),
@@ -381,7 +398,10 @@ export async function getReviewDashboardSummary(filters: AjuanFilters = {}) {
       rejected: Number(row.rejected || 0),
       approved: Number(row.approved || 0),
       archived: Number(row.archived || 0),
-      nominalTotal: Number(row.nominal_total || 0)
+      lpjUploaded: Number(row.lpj_uploaded || 0),
+      realisasiCount: Number(row.realisasi_count || 0),
+      nominalTotal: Number(row.nominal_total || 0),
+      realisasiTotal: Number(row.realisasi_total || 0)
     };
   }
 
@@ -393,7 +413,10 @@ export async function getReviewDashboardSummary(filters: AjuanFilters = {}) {
     rejected: rows.filter((row) => row.review_status_dirkeu === 'Ditolak Dirkeu').length,
     approved: rows.filter((row) => row.review_status_dirkeu === 'Disetujui Dirkeu').length,
     archived: rows.filter((row) => row.is_archived).length,
-    nominalTotal: rows.reduce((sum, row) => sum + Number(row.nominal || 0), 0)
+    lpjUploaded: rows.filter((row) => row.status_lpj === 'Sudah Upload').length,
+    realisasiCount: rows.filter((row) => row.nominal_realisasi !== null).length,
+    nominalTotal: rows.reduce((sum, row) => sum + Number(row.nominal || 0), 0),
+    realisasiTotal: rows.reduce((sum, row) => sum + Number(row.nominal_realisasi || 0), 0)
   };
 }
 

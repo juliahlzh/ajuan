@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { getDirkeuRecordKind, isDirkeuApprovalRequired } from './dirkeu-view';
+import { combineDirkeuFinancialSummary, getDirkeuRecordKind, isDirkeuApprovalRequired } from './dirkeu-view';
 
 describe('tampilan data Dirkeu', () => {
   it('menandai hanya ajuan submitted aktif sebagai antrean approval', () => {
@@ -38,5 +38,20 @@ describe('tampilan data Dirkeu', () => {
         is_archived: true
       })
     ).toBe('admin_archive');
+  });
+
+  it('menggabungkan jumlah ajuan, LPJ, dan realisasi aktif serta arsip', () => {
+    expect(
+      combineDirkeuFinancialSummary(
+        { total: 10, lpjUploaded: 6, realisasiCount: 5, nominalTotal: 100_000, realisasiTotal: 80_000 },
+        { total: 2, lpjUploaded: 2, realisasiCount: 2, nominalTotal: 20_000, realisasiTotal: 18_000 }
+      )
+    ).toEqual({
+      totalAjuan: 12,
+      lpjUploaded: 8,
+      realisasiCount: 7,
+      nominalTotal: 120_000,
+      realisasiTotal: 98_000
+    });
   });
 });
