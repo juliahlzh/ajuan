@@ -32,5 +32,11 @@ export async function GET(_request: NextRequest, { params }: { params: Promise<{
     return new NextResponse('File not found.', { status: 404 });
   }
 
-  return NextResponse.redirect(result.blob.url, 302);
+  return new NextResponse(result.stream, {
+    headers: {
+      'Content-Type': result.blob.contentType,
+      'Cache-Control': 'private, no-store',
+      'X-Content-Type-Options': 'nosniff'
+    }
+  });
 }

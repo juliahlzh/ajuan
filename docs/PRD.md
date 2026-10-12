@@ -24,7 +24,7 @@ Setiap daftar ajuan pada tampilan Dirkeu menampilkan total hasil sesuai filter. 
 
 ## Kriteria Penerimaan
 
-- Export Excel menyimpan hyperlink HTTP/HTTPS absolut untuk Bukti TF, Memo, dan LPJ. Setiap lampiran tambahan tersedia sebagai hyperlink tersendiri pada sheet Lampiran; file privat tetap dibuka melalui sesi login aplikasi.
+- Export Excel menyimpan hyperlink HTTP/HTTPS absolut untuk Bukti TF, Memo, dan LPJ. Setiap lampiran tambahan tersedia sebagai hyperlink tersendiri pada sheet Lampiran. File privat aplikasi memakai link bertanda tangan server yang berlaku 30 hari sejak export dan dapat dibuka tanpa login; token palsu, path berbeda, dan token kedaluwarsa ditolak. Endpoint file biasa tetap memerlukan login. Panduan masa berlaku disertakan dalam workbook.
 
 - Dirkeu dapat membuka `Semua Input Admin` dari kartu ringkasan maupun filter Data.
 - Jumlah pada kartu `Semua Input Admin` mencakup data aktif dan arsip sesuai filter halaman.

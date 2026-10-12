@@ -2,6 +2,7 @@ import { NextRequest } from 'next/server';
 import ExcelJS from 'exceljs';
 import { listAjuan } from '@/lib/ajuan';
 import { exportAttachmentLinks, setAttachmentHyperlink } from '@/lib/export-links';
+import { createSharedFileUrl } from '@/lib/shared-file-links';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -91,7 +92,8 @@ export async function GET(request: NextRequest) {
       { key: 'link_lpj', label: 'LPJ', value: row.link_lpj }
     ];
     for (const group of groups) {
-      const links = exportAttachmentLinks(group.value, request.nextUrl.origin);
+      const links = exportAttachmentLinks(group.value, request.nextUrl.origin)
+        .map(url => createSharedFileUrl(url, request.nextUrl.origin));
       if (links.length) {
         setAttachmentHyperlink(excelRow.getCell(group.key), links[0],
           links.length > 1 ? `Buka ${group.label} 1 (${links.length} file, lihat sheet Lampiran)` : `Buka ${group.label}`);
@@ -105,6 +107,12 @@ export async function GET(request: NextRequest) {
   attachments.getRow(1).font = { bold: true, color: { argb: 'FFFFFFFF' } };
   attachments.getRow(1).fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF0F766E' } };
   attachments.getRow(1).height = 24;
+  const guide = workbook.addWorksheet('Panduan Lampiran');
+  guide.getColumn(1).width = 110;
+  guide.addRow(['Link lampiran Ajuan berlaku 30 hari sejak waktu export.']);
+  guide.addRow([`Waktu export: ${workbook.created.toISOString()}`]);
+  guide.addRow(['Link dapat dibuka tanpa login oleh siapa pun yang memiliki file Excel atau link tersebut.']);
+  guide.addRow(['Jika link kedaluwarsa, login ke Ajuan dan export Excel ulang. Link eksternal mengikuti aturan penyedia file.']);
   sheet.getRow(1).font = { bold: true, color: { argb: 'FFFFFFFF' } };
   sheet.getRow(1).height = 24;
   sheet.getRow(1).fill = {

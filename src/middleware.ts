@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { authEnabled, clientSessionCookieName, getDefaultRouteForRole, getSessionFromToken, sessionCookieName } from '@/lib/auth';
 
-const publicPaths = ['/login', '/api/login', '/api/health', '/auth/restore'];
+const publicPaths = ['/login', '/api/login', '/api/health', '/auth/restore', '/api/shared-files'];
 const adminOnlyPrefixes = ['/cek-ajuan', '/ajuan', '/upload-lpj', '/import-sheet', '/api/export'];
 const dirkeuOnlyPrefixes = ['/review-dirkeu', '/upload-bukti'];
 
