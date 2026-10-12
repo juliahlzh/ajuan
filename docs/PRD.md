@@ -24,6 +24,8 @@ Setiap daftar ajuan pada tampilan Dirkeu menampilkan total hasil sesuai filter. 
 
 ## Kriteria Penerimaan
 
+- Export Excel menyimpan hyperlink HTTP/HTTPS absolut untuk Bukti TF, Memo, dan LPJ. Setiap lampiran tambahan tersedia sebagai hyperlink tersendiri pada sheet Lampiran; file privat tetap dibuka melalui sesi login aplikasi.
+
 - Dirkeu dapat membuka `Semua Input Admin` dari kartu ringkasan maupun filter Data.
 - Jumlah pada kartu `Semua Input Admin` mencakup data aktif dan arsip sesuai filter halaman.
 - Ringkasan Dirkeu menampilkan total seluruh ajuan dan total nominalnya.

@@ -1,6 +1,7 @@
 import { NextRequest } from 'next/server';
 import ExcelJS from 'exceljs';
 import { listAjuan } from '@/lib/ajuan';
+import { exportAttachmentLinks, setAttachmentHyperlink } from '@/lib/export-links';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -24,6 +25,14 @@ export async function GET(request: NextRequest) {
   workbook.creator = 'Ajuan Pembayaran';
   workbook.created = new Date();
   const sheet = workbook.addWorksheet('Rekap Ajuan');
+  const attachments = workbook.addWorksheet('Lampiran');
+  attachments.columns = [
+    { header: 'ID Ajuan', key: 'id', width: 24 },
+    { header: 'Jenis Lampiran', key: 'jenis', width: 20 },
+    { header: 'File', key: 'file', width: 48 }
+  ];
+  attachments.views = [{ state: 'frozen', ySplit: 1 }];
+  attachments.autoFilter = 'A1:C1';
   sheet.columns = [
     { header: 'ID', key: 'id', width: 22 },
     { header: 'Tanggal Ajuan', key: 'tanggal', width: 15 },
@@ -53,7 +62,7 @@ export async function GET(request: NextRequest) {
     to: 'U1'
   };
   rows.forEach((row) => {
-    sheet.addRow({
+    const excelRow = sheet.addRow({
       id: row.id_ajuan,
       tanggal: new Date(row.tanggal_ajuan).toISOString().slice(0, 10),
       pengaju: row.nama_pengaju,
@@ -72,11 +81,30 @@ export async function GET(request: NextRequest) {
       realisasi: row.nominal_realisasi ?? '',
       selisih: row.selisih_dana,
       status_dana: row.status_dana,
-      bukti: row.link_bukti_transfer || '',
-      link_memo: row.link_memo_ajuan || '',
-      link_lpj: row.link_lpj || ''
+      bukti: '',
+      link_memo: '',
+      link_lpj: ''
     });
+    const groups = [
+      { key: 'bukti', label: 'Bukti TF', value: row.link_bukti_transfer },
+      { key: 'link_memo', label: 'Memo', value: row.link_memo_ajuan },
+      { key: 'link_lpj', label: 'LPJ', value: row.link_lpj }
+    ];
+    for (const group of groups) {
+      const links = exportAttachmentLinks(group.value, request.nextUrl.origin);
+      if (links.length) {
+        setAttachmentHyperlink(excelRow.getCell(group.key), links[0],
+          links.length > 1 ? `Buka ${group.label} 1 (${links.length} file, lihat sheet Lampiran)` : `Buka ${group.label}`);
+      }
+      links.forEach((url, index) => {
+        const attachmentRow = attachments.addRow({ id: row.id_ajuan, jenis: group.label });
+        setAttachmentHyperlink(attachmentRow.getCell('file'), url, `Buka ${group.label} ${index + 1}`);
+      });
+    }
   });
+  attachments.getRow(1).font = { bold: true, color: { argb: 'FFFFFFFF' } };
+  attachments.getRow(1).fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF0F766E' } };
+  attachments.getRow(1).height = 24;
   sheet.getRow(1).font = { bold: true, color: { argb: 'FFFFFFFF' } };
   sheet.getRow(1).height = 24;
   sheet.getRow(1).fill = {
